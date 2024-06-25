@@ -1,0 +1,1039 @@
+2024.06.14 14:41:53 ➾ Program started
+2024.06.14 14:41:53 ➾ Twitter opened
+2024.06.14 14:43:23 ➾ Failed. Try again
+2024.06.14 14:54:07 ➾ Program started
+2024.06.14 14:54:07 ➾ Twitter opened
+2024.06.14 14:55:37 ➾ Failed. Try again
+2024.06.14 14:59:42 ➾ Program started
+2024.06.14 14:59:42 ➾ Twitter opened
+2024.06.14 15:01:12 ➾ Failed. Try again
+2024.06.14 15:06:43 ➾ Program started
+2024.06.14 15:06:43 ➾ Twitter opened
+2024.06.14 15:08:13 ➾ Failed. Try again
+2024.06.14 15:09:15 ➾ Program started
+2024.06.14 15:09:15 ➾ Twitter opened
+2024.06.14 15:10:45 ➾ Failed. Try again
+2024.06.14 15:12:12 ➾ Program started
+2024.06.14 15:12:12 ➾ Twitter opened
+2024.06.14 15:13:42 ➾ Failed. Try again
+2024.06.14 15:35:55 ➾ Program started
+2024.06.14 15:35:55 ➾ Twitter opened
+2024.06.14 15:36:25 ➾ Failed. Try again
+2024.06.14 15:41:05 ➾ Program started
+2024.06.14 15:41:05 ➾ Twitter opened
+2024.06.14 15:41:37 ➾ Failed. Try again
+2024.06.14 22:10:27 ➾ Program started
+2024.06.14 22:10:27 ➾ Twitter opened
+2024.06.14 22:10:27 ➾ Logged in!
+2024.06.14 22:20:28 ➾ Program started
+2024.06.14 22:20:28 ➾ Twitter opened
+2024.06.14 22:20:28 ➾ Logged in!
+2024.06.14 22:22:14 ➾ Program started
+2024.06.14 22:22:14 ➾ Twitter opened
+2024.06.14 22:22:14 ➾ Logged in!
+2024.06.14 22:23:09 ➾ Program started
+2024.06.14 22:23:09 ➾ Twitter opened
+2024.06.14 22:23:09 ➾ Logged in!
+2024.06.14 22:27:30 ➾ Program started
+2024.06.14 22:27:30 ➾ Twitter opened
+2024.06.14 22:27:30 ➾ Logged in!
+2024.06.14 22:27:50 ➾ Program started
+2024.06.14 22:27:50 ➾ Twitter opened
+2024.06.14 22:27:50 ➾ Logged in!
+2024.06.14 22:28:35 ➾ Program started
+2024.06.14 22:28:35 ➾ Twitter opened
+2024.06.14 22:28:35 ➾ Logged in!
+2024.06.14 22:35:36 ➾ Program started
+2024.06.14 22:35:36 ➾ Twitter opened
+2024.06.14 22:35:36 ➾ Logged in!
+2024.06.14 22:38:06 ➾ Program started
+2024.06.14 22:38:06 ➾ Twitter opened
+2024.06.14 22:38:06 ➾ Logged in!
+2024.06.14 22:38:33 ➾ Program started
+2024.06.14 22:38:33 ➾ Twitter opened
+2024.06.14 22:38:33 ➾ Logged in!
+2024.06.14 22:39:58 ➾ Program started
+2024.06.14 22:39:58 ➾ Twitter opened
+2024.06.14 22:39:58 ➾ Logged in!
+2024.06.14 22:44:12 ➾ Program started
+2024.06.14 22:44:12 ➾ Twitter opened
+2024.06.14 22:44:12 ➾ Logged in!
+2024.06.14 22:46:01 ➾ Program started
+2024.06.14 22:46:01 ➾ Twitter opened
+2024.06.14 22:46:01 ➾ Logged in!
+2024.06.14 22:51:25 ➾ Program started
+2024.06.14 22:51:25 ➾ Twitter opened
+2024.06.14 22:51:25 ➾ Logged in!
+2024.06.14 23:03:10 ➾ Program started
+2024.06.14 23:03:10 ➾ Twitter opened
+2024.06.14 23:03:10 ➾ Logged in!
+2024.06.14 23:04:52 ➾ Program started
+2024.06.14 23:04:52 ➾ Twitter opened
+2024.06.14 23:04:52 ➾ Logged in!
+2024.06.14 23:06:06 ➾ Program started
+2024.06.14 23:06:06 ➾ Twitter opened
+2024.06.14 23:06:06 ➾ Logged in!
+2024.06.14 23:06:30 ➾ Program started
+2024.06.14 23:06:30 ➾ Twitter opened
+2024.06.14 23:06:30 ➾ Logged in!
+2024.06.14 23:06:54 ➾ Program started
+2024.06.14 23:06:54 ➾ Twitter opened
+2024.06.14 23:06:54 ➾ Logged in!
+2024.06.14 23:07:23 ➾ Followed profile: https://x.com/TrollFootball
+2024.06.14 23:18:29 ➾ Program started
+2024.06.14 23:18:29 ➾ Twitter opened
+2024.06.14 23:18:29 ➾ Logged in!
+2024.06.14 23:19:08 ➾ Program started
+2024.06.14 23:19:08 ➾ Twitter opened
+2024.06.14 23:19:08 ➾ Logged in!
+2024.06.14 23:19:19 ➾ Followed profile: https://x.com/FabrizioRomano
+2024.06.15 13:36:41 ➾ Program started
+2024.06.15 13:36:41 ➾ Twitter opened
+2024.06.15 13:36:41 ➾ Logged in!
+2024.06.15 13:40:48 ➾ Program started
+2024.06.15 13:40:48 ➾ Twitter opened
+2024.06.15 13:40:48 ➾ Logged in!
+2024.06.15 13:44:04 ➾ Program started
+2024.06.15 13:44:04 ➾ Twitter opened
+2024.06.15 13:44:04 ➾ Logged in!
+2024.06.15 13:44:55 ➾ Program started
+2024.06.15 13:44:55 ➾ Twitter opened
+2024.06.15 13:44:55 ➾ Logged in!
+2024.06.15 13:45:03 ➾ Visiting 9 profiles.
+2024.06.15 13:45:18 ➾ Followed profile: http://www.linkedin.com/pub/rachael-rice/79/a6/86
+2024.06.15 13:47:24 ➾ Program started
+2024.06.15 13:47:24 ➾ Twitter opened
+2024.06.15 13:47:24 ➾ Logged in!
+2024.06.15 13:47:32 ➾ Visiting 2 profiles.
+2024.06.15 13:47:36 ➾ Followed profile: https://twitter.com/larryfink
+2024.06.15 13:47:42 ➾ Followed profile: https://twitter.com/calvinmcgruber
+2024.06.15 13:49:27 ➾ Program started
+2024.06.15 13:49:27 ➾ Twitter opened
+2024.06.15 13:49:27 ➾ Logged in!
+2024.06.15 13:52:02 ➾ Program started
+2024.06.15 13:52:02 ➾ Twitter opened
+2024.06.15 13:52:02 ➾ Logged in!
+2024.06.15 13:52:37 ➾ 
+2024.06.15 13:52:40 ➾ #heath
+#job
+
+2024.06.15 13:52:40 ➾ #heath
+#job
+Is there the job of President/Chief position? 
+@leona
+@HaoNam19307
+Please donate to TAHK Foundation, then we will help you with your target:
+- Donating $15,000 USD per month, $150,000 USD per year service
+- Email to donate@tahkfoundation.org for your.
+2024.06.15 13:53:36 ➾ 
+2024.06.15 13:53:39 ➾ #heath
+#job
+
+2024.06.15 13:53:39 ➾ #heath
+#job
+Is there the job of President/Chief position? 
+@HaoNam19307
+
+Please donate to TAHK Foundation, then we will help you with your target:
+- Donating $15,000 USD per month, $150,000 USD per year service
+- Email to donate@tahkfoundation.org for your.
+2024.06.15 13:54:34 ➾ 
+2024.06.15 13:54:37 ➾ #heath
+#job
+
+2024.06.15 13:54:37 ➾ #heath
+#job
+Hi
+@Lee
+@HaoNam19307
+Is there the job of President/Chief position? Please donate to TAHK Foundation, then we will help you with your target: - Donating $15,000 USD per month, $150,000 USD per year service - Email to: donate@tahkfoundation.org # #
+2024.06.15 14:06:52 ➾ Program started
+2024.06.15 14:06:52 ➾ Twitter opened
+2024.06.15 14:06:52 ➾ Logged in!
+2024.06.15 14:16:14 ➾ Program started
+2024.06.15 14:16:14 ➾ Twitter opened
+2024.06.15 14:16:14 ➾ Logged in!
+2024.06.15 14:16:31 ➾ 
+2024.06.15 14:16:34 ➾ #heath
+#job
+
+2024.06.15 14:16:34 ➾ #heath
+#job
+Is there the job of President/Chief position? 
+@HaoNam19307
+
+Please donate to TAHK Foundation, then we will help you with your target:
+- Donating $15,000 USD per month, $150,000 USD per year service
+- Email to donate@tahkfoundation.org for your.
+2024.06.15 14:16:59 ➾ 
+2024.06.15 14:17:02 ➾ #heath
+#job
+
+2024.06.15 14:17:02 ➾ #heath
+#job
+Hi
+@Lee
+@HaoNam19307
+Is there the job of President/Chief position? Please donate to TAHK Foundation, then we will help you with your target: - Donating $15,000 USD per month, $150,000 USD per year service - Email to: donate@tahkfoundation.org # #
+2024.06.15 14:19:55 ➾ Program started
+2024.06.15 14:19:55 ➾ Twitter opened
+2024.06.15 14:19:55 ➾ Logged in!
+2024.06.15 14:20:01 ➾ Tweeting
+2024.06.15 14:20:11 ➾ Is there the job of President/Chief position? 
+@HaoNam19307
+
+Please donate to TAHK Foundation, then we will help you with your target:
+- Donating $15,000 USD per month, $150,000 USD per year service
+- Email to donate@tahkfoundation.org for your.
+2024.06.15 14:20:11 ➾ #heath
+#job
+Is there the job of President/Chief position? 
+@HaoNam19307
+
+Please donate to TAHK Foundation, then we will help you with your target:
+- Donating $15,000 USD per month, $150,000 USD per year service
+- Email to donate@tahkfoundation.org for your.
+2024.06.15 14:20:27 ➾ Tweeted : #heath
+#job
+Is there the job of President/Chief position? 
+@HaoNam19307
+
+Please donate to TAHK Foundation, then we will help you with your target:
+- Donating $15,000 USD per month, $150,000 USD per year service
+- Email to donate@tahkfoundation.org for your.
+2024.06.15 14:20:38 ➾ Hi
+@Lee
+@HaoNam19307
+Is there the job of President/Chief position? Please donate to TAHK Foundation, then we will help you with your target: - Donating $15,000 USD per month, $150,000 USD per year service - Email to: donate@tahkfoundation.org # #
+2024.06.15 14:20:38 ➾ #heath
+#job
+Hi
+@Lee
+@HaoNam19307
+Is there the job of President/Chief position? Please donate to TAHK Foundation, then we will help you with your target: - Donating $15,000 USD per month, $150,000 USD per year service - Email to: donate@tahkfoundation.org # #
+2024.06.15 14:20:53 ➾ Tweeted : #heath
+#job
+Hi
+@Lee
+@HaoNam19307
+Is there the job of President/Chief position? Please donate to TAHK Foundation, then we will help you with your target: - Donating $15,000 USD per month, $150,000 USD per year service - Email to: donate@tahkfoundation.org # #
+2024.06.15 14:28:38 ➾ Program started
+2024.06.15 14:28:38 ➾ Twitter opened
+2024.06.15 14:28:38 ➾ Logged in!
+2024.06.15 14:28:52 ➾ 
+2024.06.15 14:28:55 ➾ #heath
+#job
+
+2024.06.15 14:28:55 ➾ #heath
+#job
+Is there the job of President/Chief position? 
+@HaoNam19307
+
+Please donate to TAHK Foundation, then we will help you with your target:
+- Donating $15,000 USD per month, $150,000 USD per year service
+- Email to donate@tahkfoundation.org for your.
+2024.06.15 14:29:20 ➾ 
+2024.06.15 14:29:23 ➾ #heath
+#job
+
+2024.06.15 14:29:23 ➾ #heath
+#job
+Hi
+@Lee
+@HaoNam19307
+Is there the job of President/Chief position? Please donate to TAHK Foundation, then we will help you with your target: - Donating $15,000 USD per month, $150,000 USD per year service - Email to: donate@tahkfoundation.org # #
+2024.06.15 14:29:55 ➾ Tweeting
+2024.06.15 14:30:03 ➾ Is there the job of President/Chief position? 
+@HaoNam19307
+
+Please donate to TAHK Foundation, then we will help you with your target:
+- Donating $15,000 USD per month, $150,000 USD per year service
+- Email to donate@tahkfoundation.org for your.
+2024.06.15 14:30:03 ➾ #heath
+#job
+Is there the job of President/Chief position? 
+@HaoNam19307
+
+Please donate to TAHK Foundation, then we will help you with your target:
+- Donating $15,000 USD per month, $150,000 USD per year service
+- Email to donate@tahkfoundation.org for your.
+2024.06.15 14:30:19 ➾ Tweeted : #heath
+#job
+Is there the job of President/Chief position? 
+@HaoNam19307
+
+Please donate to TAHK Foundation, then we will help you with your target:
+- Donating $15,000 USD per month, $150,000 USD per year service
+- Email to donate@tahkfoundation.org for your.
+2024.06.15 14:30:31 ➾ Hi
+@Lee
+@HaoNam19307
+Is there the job of President/Chief position? Please donate to TAHK Foundation, then we will help you with your target: - Donating $15,000 USD per month, $150,000 USD per year service - Email to: donate@tahkfoundation.org # #
+2024.06.15 14:30:31 ➾ #heath
+#job
+Hi
+@Lee
+@HaoNam19307
+Is there the job of President/Chief position? Please donate to TAHK Foundation, then we will help you with your target: - Donating $15,000 USD per month, $150,000 USD per year service - Email to: donate@tahkfoundation.org # #
+2024.06.15 14:30:47 ➾ Tweeted : #heath
+#job
+Hi
+@Lee
+@HaoNam19307
+Is there the job of President/Chief position? Please donate to TAHK Foundation, then we will help you with your target: - Donating $15,000 USD per month, $150,000 USD per year service - Email to: donate@tahkfoundation.org # #
+2024.06.18 22:14:21 ➾ Program started
+2024.06.18 22:14:21 ➾ Twitter opened
+2024.06.18 22:14:21 ➾ Logged in!
+2024.06.18 23:00:24 ➾ Program started
+2024.06.18 23:00:24 ➾ Twitter opened
+2024.06.18 23:00:24 ➾ Logged in!
+2024.06.18 23:30:29 ➾ Program started
+2024.06.18 23:30:29 ➾ Twitter opened
+2024.06.18 23:30:29 ➾ Logged in!
+2024.06.19 22:12:54 ➾ Program started
+2024.06.19 22:12:54 ➾ Twitter opened
+2024.06.19 22:12:54 ➾ Logged in!
+2024.06.19 22:13:10 ➾ Visiting 2 profiles.
+2024.06.19 22:13:29 ➾ Followed profile: https://twitter.com/ZenXHT
+2024.06.19 22:13:34 ➾ Followed profile: https://twitter.com/JamesPGorman1
+2024.06.19 22:14:49 ➾ Visiting 2 profiles.
+2024.06.19 22:15:04 ➾ Followed profile: https://twitter.com/ZenXHT
+2024.06.19 22:15:09 ➾ Followed profile: https://twitter.com/JamesPGorman1
+2024.06.19 22:35:10 ➾ Program started
+2024.06.19 22:35:10 ➾ Twitter opened
+2024.06.19 22:35:10 ➾ Logged in!
+2024.06.19 22:35:16 ➾ Visiting 3 profiles.
+2024.06.19 22:35:32 ➾ Followed profile: https://twitter.com/ZenXHT
+2024.06.19 22:35:36 ➾ Followed profile: https://twitter.com/JamesPGorman1
+2024.06.19 22:35:40 ➾ Followed profile: https://twitter.com/larryfink
+2024.06.19 22:40:56 ➾ Program started
+2024.06.19 22:40:56 ➾ Twitter opened
+2024.06.19 22:40:56 ➾ Logged in!
+2024.06.19 22:41:57 ➾ Program started
+2024.06.19 22:41:57 ➾ Twitter opened
+2024.06.19 22:41:57 ➾ Logged in!
+2024.06.19 22:42:01 ➾ Visiting 3 profiles.
+2024.06.19 22:42:16 ➾ Followed profile: https://twitter.com/ZenXHT
+2024.06.19 22:42:20 ➾ Followed profile: https://twitter.com/JamesPGorman1
+2024.06.19 22:42:24 ➾ Followed profile: https://twitter.com/larryfink
+2024.06.19 22:42:57 ➾ Program started
+2024.06.19 22:42:57 ➾ Twitter opened
+2024.06.19 22:42:57 ➾ Logged in!
+2024.06.19 22:46:18 ➾ Program started
+2024.06.19 22:46:18 ➾ Twitter opened
+2024.06.19 22:46:18 ➾ Logged in!
+2024.06.19 22:47:10 ➾ Program started
+2024.06.19 22:47:10 ➾ Twitter opened
+2024.06.19 22:47:10 ➾ Logged in!
+2024.06.19 22:48:51 ➾ Program started
+2024.06.19 22:48:51 ➾ Twitter opened
+2024.06.19 22:48:51 ➾ Logged in!
+2024.06.19 22:48:57 ➾ Visiting 2 profiles.
+2024.06.19 22:49:13 ➾ Followed profile: https://twitter.com/ZenXHT
+2024.06.19 22:49:18 ➾ Followed profile: https://twitter.com/JamesPGorman1
+2024.06.19 22:51:10 ➾ Program started
+2024.06.19 22:51:10 ➾ Twitter opened
+2024.06.19 22:51:10 ➾ Logged in!
+2024.06.19 22:51:15 ➾ Visiting 2 profiles.
+2024.06.19 22:51:30 ➾ Followed profile: https://twitter.com/ZenXHT
+2024.06.19 22:51:35 ➾ Followed profile: https://twitter.com/JamesPGorman1
+2024.06.19 22:52:50 ➾ Program started
+2024.06.19 22:52:50 ➾ Twitter opened
+2024.06.19 22:52:50 ➾ Logged in!
+2024.06.19 22:52:54 ➾ Visiting 2 profiles.
+2024.06.19 22:53:08 ➾ Followed profile: https://twitter.com/ZenXHT
+2024.06.19 22:53:12 ➾ Followed profile: https://twitter.com/JamesPGorman1
+2024.06.19 22:54:44 ➾ Program started
+2024.06.19 22:54:44 ➾ Twitter opened
+2024.06.19 22:54:44 ➾ Logged in!
+2024.06.19 22:54:49 ➾ Visiting 2 profiles.
+2024.06.19 22:55:04 ➾ Followed profile: https://twitter.com/ZenXHT
+2024.06.19 22:55:09 ➾ Followed profile: https://twitter.com/JamesPGorman1
+2024.06.19 23:00:53 ➾ Program started
+2024.06.19 23:00:53 ➾ Twitter opened
+2024.06.19 23:00:53 ➾ Logged in!
+2024.06.19 23:00:57 ➾ Visiting 2 profiles.
+2024.06.19 23:01:12 ➾ Followed profile: https://twitter.com/ZenXHT
+2024.06.19 23:01:17 ➾ Followed profile: https://twitter.com/JamesPGorman1
+2024.06.19 23:04:16 ➾ Program started
+2024.06.19 23:04:16 ➾ Twitter opened
+2024.06.19 23:04:16 ➾ Logged in!
+2024.06.19 23:04:20 ➾ Visiting 2 profiles.
+2024.06.19 23:04:35 ➾ Followed profile: https://twitter.com/ZenXHT
+2024.06.19 23:04:40 ➾ Followed profile: https://twitter.com/JamesPGorman1
+2024.06.19 23:05:53 ➾ Program started
+2024.06.19 23:05:53 ➾ Twitter opened
+2024.06.19 23:05:53 ➾ Logged in!
+2024.06.19 23:06:03 ➾ Program started
+2024.06.19 23:06:03 ➾ Twitter opened
+2024.06.19 23:06:03 ➾ Logged in!
+2024.06.19 23:06:07 ➾ Visiting 2 profiles.
+2024.06.19 23:06:22 ➾ Followed profile: https://twitter.com/ZenXHT
+2024.06.19 23:06:27 ➾ Followed profile: https://twitter.com/JamesPGorman1
+2024.06.21 22:09:25 ➾ Program started
+2024.06.21 22:09:25 ➾ Twitter opened
+2024.06.21 22:09:25 ➾ Logged in!
+2024.06.21 22:09:44 ➾ Visiting 10 profiles.
+2024.06.21 22:10:02 ➾ Followed profile: https://twitter.com/ZenXHT
+2024.06.21 22:10:16 ➾ Followed profile: https://twitter.com/JamesPGorman1
+2024.06.21 22:10:24 ➾ Followed profile: https://twitter.com/larryfink
+2024.06.21 22:10:34 ➾ Followed profile: https://twitter.com/calvinmcgruber
+2024.06.21 22:10:42 ➾ Followed profile: https://twitter.com/WBCollaborative
+2024.06.21 22:10:54 ➾ Followed profile: https://twitter.com/shookresearch
+2024.06.21 22:10:56 ➾ Failed to visit profile: nan
+2024.06.21 22:10:59 ➾ Failed to visit profile: nan
+2024.06.21 22:11:02 ➾ Failed to visit profile: nan
+2024.06.21 22:11:05 ➾ Failed to visit profile: nan
+2024.06.21 22:12:47 ➾ Program started
+2024.06.21 22:12:47 ➾ Twitter opened
+2024.06.21 22:12:47 ➾ Logged in!
+2024.06.21 22:13:47 ➾ Program started
+2024.06.21 22:13:47 ➾ Twitter opened
+2024.06.21 22:13:47 ➾ Logged in!
+2024.06.21 22:18:21 ➾ Program started
+2024.06.21 22:18:21 ➾ Twitter opened
+2024.06.21 22:18:21 ➾ Logged in!
+2024.06.21 22:20:32 ➾ Program started
+2024.06.21 22:20:32 ➾ Twitter opened
+2024.06.21 22:20:32 ➾ Logged in!
+2024.06.21 22:20:57 ➾ 
+2024.06.21 22:21:00 ➾ #heath
+#job
+
+2024.06.21 22:21:00 ➾ #heath
+#job
+Is there the job of President/Chief position? 
+@leona
+@HaoNam19307
+Please donate to TAHK Foundation, then we will help you with your target:
+- Donating $15,000 USD per month, $150,000 USD per year service
+- Email to donate@tahkfoundation.org for your.
+2024.06.21 22:21:35 ➾ 
+2024.06.21 22:21:38 ➾ #heath
+#job
+
+2024.06.21 22:21:38 ➾ #heath
+#job
+Is there the job of President/Chief position? 
+@HaoNam19307
+
+Please donate to TAHK Foundation, then we will help you with your target:
+- Donating $15,000 USD per month, $150,000 USD per year service
+- Email to donate@tahkfoundation.org for your.
+2024.06.21 22:22:14 ➾ 
+2024.06.21 22:22:17 ➾ #heath
+#job
+
+2024.06.21 22:22:17 ➾ #heath
+#job
+Hi
+@Lee
+@HaoNam19307
+Is there the job of President/Chief position? Please donate to TAHK Foundation, then we will help you with your target: - Donating $15,000 USD per month, $150,000 USD per year service - Email to: donate@tahkfoundation.org # #
+2024.06.21 22:22:52 ➾ 
+2024.06.21 22:22:55 ➾ #heath
+#job
+
+2024.06.21 22:22:55 ➾ #heath
+#job
+Is there the job of President/Chief position? 
+@leona
+@HaoNam19308
+Please donate to TAHK Foundation, then we will help you with your target:
+- Donating $15,000 USD per month, $150,000 USD per year service
+- Email to donate@tahkfoundation.org for your.
+2024.06.21 22:23:30 ➾ 
+2024.06.21 22:23:33 ➾ #heath
+#job
+
+2024.06.21 22:23:33 ➾ #heath
+#job
+Is there the job of President/Chief position? 
+@HaoNam19308
+
+Please donate to TAHK Foundation, then we will help you with your target:
+- Donating $15,000 USD per month, $150,000 USD per year service
+- Email to donate@tahkfoundation.org for your.
+2024.06.21 22:24:08 ➾ 
+2024.06.21 22:24:11 ➾ #heath
+#job
+
+2024.06.21 22:24:11 ➾ #heath
+#job
+Is there the job of President/Chief position? 
+@Lee
+@HaoNam19308
+Please donate to TAHK Foundation, then we will help you with your target:
+- Donating $15,000 USD per month, $150,000 USD per year service
+- Email to donate@tahkfoundation.org for your.
+2024.06.21 22:25:56 ➾ Program started
+2024.06.21 22:25:56 ➾ Twitter opened
+2024.06.21 22:25:56 ➾ Logged in!
+2024.06.21 22:25:59 ➾ Tweeting
+2024.06.21 22:26:13 ➾ Is there the job of President/Chief position? 
+@leona
+@HaoNam19307
+Please donate to TAHK Foundation, then we will help you with your target:
+- Donating $15,000 USD per month, $150,000 USD per year service
+- Email to donate@tahkfoundation.org for your.
+2024.06.21 22:26:13 ➾ #heath
+#job
+Is there the job of President/Chief position? 
+@leona
+@HaoNam19307
+Please donate to TAHK Foundation, then we will help you with your target:
+- Donating $15,000 USD per month, $150,000 USD per year service
+- Email to donate@tahkfoundation.org for your.
+2024.06.21 22:26:29 ➾ Tweeted : #heath
+#job
+Is there the job of President/Chief position? 
+@leona
+@HaoNam19307
+Please donate to TAHK Foundation, then we will help you with your target:
+- Donating $15,000 USD per month, $150,000 USD per year service
+- Email to donate@tahkfoundation.org for your.
+2024.06.21 22:26:48 ➾ Is there the job of President/Chief position? 
+@HaoNam19307
+
+Please donate to TAHK Foundation, then we will help you with your target:
+- Donating $15,000 USD per month, $150,000 USD per year service
+- Email to donate@tahkfoundation.org for your.
+2024.06.21 22:26:48 ➾ #heath
+#job
+Is there the job of President/Chief position? 
+@HaoNam19307
+
+Please donate to TAHK Foundation, then we will help you with your target:
+- Donating $15,000 USD per month, $150,000 USD per year service
+- Email to donate@tahkfoundation.org for your.
+2024.06.21 22:27:04 ➾ Tweeted : #heath
+#job
+Is there the job of President/Chief position? 
+@HaoNam19307
+
+Please donate to TAHK Foundation, then we will help you with your target:
+- Donating $15,000 USD per month, $150,000 USD per year service
+- Email to donate@tahkfoundation.org for your.
+2024.06.21 22:27:19 ➾ Hi
+@Lee
+@HaoNam19307
+Is there the job of President/Chief position? Please donate to TAHK Foundation, then we will help you with your target: - Donating $15,000 USD per month, $150,000 USD per year service - Email to: donate@tahkfoundation.org # #
+2024.06.21 22:27:19 ➾ #heath
+#job
+Hi
+@Lee
+@HaoNam19307
+Is there the job of President/Chief position? Please donate to TAHK Foundation, then we will help you with your target: - Donating $15,000 USD per month, $150,000 USD per year service - Email to: donate@tahkfoundation.org # #
+2024.06.21 22:27:34 ➾ Tweeted : #heath
+#job
+Hi
+@Lee
+@HaoNam19307
+Is there the job of President/Chief position? Please donate to TAHK Foundation, then we will help you with your target: - Donating $15,000 USD per month, $150,000 USD per year service - Email to: donate@tahkfoundation.org # #
+2024.06.21 22:28:04 ➾ Is there the job of President/Chief position? 
+@leona
+@HaoNam19308
+Please donate to TAHK Foundation, then we will help you with your target:
+- Donating $15,000 USD per month, $150,000 USD per year service
+- Email to donate@tahkfoundation.org for your.
+2024.06.21 22:28:04 ➾ #heath
+#job
+Is there the job of President/Chief position? 
+@leona
+@HaoNam19308
+Please donate to TAHK Foundation, then we will help you with your target:
+- Donating $15,000 USD per month, $150,000 USD per year service
+- Email to donate@tahkfoundation.org for your.
+2024.06.21 22:28:20 ➾ Tweeted : #heath
+#job
+Is there the job of President/Chief position? 
+@leona
+@HaoNam19308
+Please donate to TAHK Foundation, then we will help you with your target:
+- Donating $15,000 USD per month, $150,000 USD per year service
+- Email to donate@tahkfoundation.org for your.
+2024.06.21 22:28:48 ➾ Is there the job of President/Chief position? 
+@HaoNam19308
+
+Please donate to TAHK Foundation, then we will help you with your target:
+- Donating $15,000 USD per month, $150,000 USD per year service
+- Email to donate@tahkfoundation.org for your.
+2024.06.21 22:28:48 ➾ #heath
+#job
+Is there the job of President/Chief position? 
+@HaoNam19308
+
+Please donate to TAHK Foundation, then we will help you with your target:
+- Donating $15,000 USD per month, $150,000 USD per year service
+- Email to donate@tahkfoundation.org for your.
+2024.06.21 22:29:03 ➾ Tweeted : #heath
+#job
+Is there the job of President/Chief position? 
+@HaoNam19308
+
+Please donate to TAHK Foundation, then we will help you with your target:
+- Donating $15,000 USD per month, $150,000 USD per year service
+- Email to donate@tahkfoundation.org for your.
+2024.06.21 22:29:43 ➾ Is there the job of President/Chief position? 
+@Lee
+@HaoNam19308
+Please donate to TAHK Foundation, then we will help you with your target:
+- Donating $15,000 USD per month, $150,000 USD per year service
+- Email to donate@tahkfoundation.org for your.
+2024.06.21 22:29:43 ➾ #heath
+#job
+Is there the job of President/Chief position? 
+@Lee
+@HaoNam19308
+Please donate to TAHK Foundation, then we will help you with your target:
+- Donating $15,000 USD per month, $150,000 USD per year service
+- Email to donate@tahkfoundation.org for your.
+2024.06.21 22:29:59 ➾ Tweeted : #heath
+#job
+Is there the job of President/Chief position? 
+@Lee
+@HaoNam19308
+Please donate to TAHK Foundation, then we will help you with your target:
+- Donating $15,000 USD per month, $150,000 USD per year service
+- Email to donate@tahkfoundation.org for your.
+2024.06.21 22:30:19 ➾ 
+2024.06.21 22:30:19 ➾ #nan
+
+2024.06.21 22:30:33 ➾ Tweeted : #nan
+
+2024.06.21 22:31:12 ➾ 
+2024.06.21 22:31:12 ➾ #nan
+
+2024.06.21 22:31:26 ➾ Tweeted : #nan
+
+2024.06.21 22:33:50 ➾ 
+2024.06.21 22:33:50 ➾ #nan
+
+2024.06.21 22:34:05 ➾ Tweeted : #nan
+
+2024.06.21 22:34:38 ➾ 
+2024.06.21 22:34:38 ➾ #nan
+
+2024.06.21 22:34:53 ➾ Tweeted : #nan
+
+2024.06.21 22:37:30 ➾ Program started
+2024.06.21 22:37:30 ➾ Twitter opened
+2024.06.21 22:37:30 ➾ Logged in!
+2024.06.22 13:34:13 ➾ Program started
+2024.06.22 13:34:13 ➾ Twitter opened
+2024.06.22 13:34:13 ➾ Logged in!
+2024.06.22 13:48:24 ➾ Program started
+2024.06.22 13:48:24 ➾ Twitter opened
+2024.06.22 13:48:24 ➾ Logged in!
+2024.06.22 13:48:31 ➾ Visiting 10 profiles.
+2024.06.22 13:48:50 ➾ Followed profile: https://twitter.com/ZenXHT
+2024.06.22 13:48:58 ➾ Followed profile: https://twitter.com/JamesPGorman1
+2024.06.22 13:49:04 ➾ Followed profile: https://twitter.com/larryfink
+2024.06.22 13:49:11 ➾ Followed profile: https://twitter.com/calvinmcgruber
+2024.06.22 13:49:19 ➾ Followed profile: https://twitter.com/WBCollaborative
+2024.06.22 13:49:31 ➾ Followed profile: https://twitter.com/shookresearch
+2024.06.22 13:49:31 ➾ Failed to visit profile: 
+2024.06.22 13:49:34 ➾ Failed to visit profile: 
+2024.06.22 13:49:37 ➾ Failed to visit profile: 
+2024.06.22 13:49:40 ➾ Failed to visit profile: 
+2024.06.22 14:37:48 ➾ Program started
+2024.06.22 14:37:48 ➾ Twitter opened
+2024.06.22 14:37:48 ➾ Logged in!
+2024.06.22 14:38:22 ➾ 
+2024.06.22 14:38:25 ➾ #heath
+#job
+
+2024.06.22 14:38:25 ➾ #heath
+#job
+Is there the job of President/Chief position? 
+@leona
+@HaoNam19307
+Please donate to TAHK Foundation, then we will help you with your target:
+- Donating $15,000 USD per month, $150,000 USD per year service
+- Email to donate@tahkfoundation.org for your.
+2024.06.22 14:39:02 ➾ 
+2024.06.22 14:39:06 ➾ #heath
+#job
+
+2024.06.22 14:39:06 ➾ #heath
+#job
+Is there the job of President/Chief position? 
+@HaoNam19307
+
+Please donate to TAHK Foundation, then we will help you with your target:
+- Donating $15,000 USD per month, $150,000 USD per year service
+- Email to donate@tahkfoundation.org for your.
+2024.06.22 14:39:31 ➾ 
+2024.06.22 14:39:34 ➾ #heath
+#job
+
+2024.06.22 14:39:34 ➾ #heath
+#job
+Hi
+@Lee
+@HaoNam19307
+Is there the job of President/Chief position? Please donate to TAHK Foundation, then we will help you with your target: - Donating $15,000 USD per month, $150,000 USD per year service - Email to: donate@tahkfoundation.org # #
+2024.06.22 14:40:00 ➾ 
+2024.06.22 14:40:03 ➾ #heath
+#job
+
+2024.06.22 14:40:03 ➾ #heath
+#job
+Is there the job of President/Chief position? 
+@leona
+@HaoNam19308
+Please donate to TAHK Foundation, then we will help you with your target:
+- Donating $15,000 USD per month, $150,000 USD per year service
+- Email to donate@tahkfoundation.org for your.
+2024.06.22 14:40:31 ➾ 
+2024.06.22 14:40:34 ➾ #heath
+#job
+
+2024.06.22 14:40:34 ➾ #heath
+#job
+Is there the job of President/Chief position? 
+@HaoNam19308
+
+Please donate to TAHK Foundation, then we will help you with your target:
+- Donating $15,000 USD per month, $150,000 USD per year service
+- Email to donate@tahkfoundation.org for your.
+2024.06.22 14:41:05 ➾ 
+2024.06.22 14:41:08 ➾ #heath
+#job
+
+2024.06.22 14:41:08 ➾ #heath
+#job
+Is there the job of President/Chief position? 
+@Lee
+@HaoNam19308
+Please donate to TAHK Foundation, then we will help you with your target:
+- Donating $15,000 USD per month, $150,000 USD per year service
+- Email to donate@tahkfoundation.org for your.
+2024.06.22 14:41:58 ➾ Tweeting
+2024.06.22 14:42:08 ➾ Is there the job of President/Chief position? 
+@leona
+@HaoNam19307
+Please donate to TAHK Foundation, then we will help you with your target:
+- Donating $15,000 USD per month, $150,000 USD per year service
+- Email to donate@tahkfoundation.org for your.
+2024.06.22 14:42:08 ➾ #heath
+#job
+Is there the job of President/Chief position? 
+@leona
+@HaoNam19307
+Please donate to TAHK Foundation, then we will help you with your target:
+- Donating $15,000 USD per month, $150,000 USD per year service
+- Email to donate@tahkfoundation.org for your.
+2024.06.22 14:42:24 ➾ Tweeted : #heath
+#job
+Is there the job of President/Chief position? 
+@leona
+@HaoNam19307
+Please donate to TAHK Foundation, then we will help you with your target:
+- Donating $15,000 USD per month, $150,000 USD per year service
+- Email to donate@tahkfoundation.org for your.
+2024.06.22 14:42:39 ➾ Is there the job of President/Chief position? 
+@HaoNam19307
+
+Please donate to TAHK Foundation, then we will help you with your target:
+- Donating $15,000 USD per month, $150,000 USD per year service
+- Email to donate@tahkfoundation.org for your.
+2024.06.22 14:42:39 ➾ #heath
+#job
+Is there the job of President/Chief position? 
+@HaoNam19307
+
+Please donate to TAHK Foundation, then we will help you with your target:
+- Donating $15,000 USD per month, $150,000 USD per year service
+- Email to donate@tahkfoundation.org for your.
+2024.06.22 14:42:55 ➾ Tweeted : #heath
+#job
+Is there the job of President/Chief position? 
+@HaoNam19307
+
+Please donate to TAHK Foundation, then we will help you with your target:
+- Donating $15,000 USD per month, $150,000 USD per year service
+- Email to donate@tahkfoundation.org for your.
+2024.06.22 14:43:08 ➾ Hi
+@Lee
+@HaoNam19307
+Is there the job of President/Chief position? Please donate to TAHK Foundation, then we will help you with your target: - Donating $15,000 USD per month, $150,000 USD per year service - Email to: donate@tahkfoundation.org # #
+2024.06.22 14:43:08 ➾ #heath
+#job
+Hi
+@Lee
+@HaoNam19307
+Is there the job of President/Chief position? Please donate to TAHK Foundation, then we will help you with your target: - Donating $15,000 USD per month, $150,000 USD per year service - Email to: donate@tahkfoundation.org # #
+2024.06.22 14:43:24 ➾ Tweeted : #heath
+#job
+Hi
+@Lee
+@HaoNam19307
+Is there the job of President/Chief position? Please donate to TAHK Foundation, then we will help you with your target: - Donating $15,000 USD per month, $150,000 USD per year service - Email to: donate@tahkfoundation.org # #
+2024.06.22 14:43:38 ➾ Is there the job of President/Chief position? 
+@leona
+@HaoNam19308
+Please donate to TAHK Foundation, then we will help you with your target:
+- Donating $15,000 USD per month, $150,000 USD per year service
+- Email to donate@tahkfoundation.org for your.
+2024.06.22 14:43:38 ➾ #heath
+#job
+Is there the job of President/Chief position? 
+@leona
+@HaoNam19308
+Please donate to TAHK Foundation, then we will help you with your target:
+- Donating $15,000 USD per month, $150,000 USD per year service
+- Email to donate@tahkfoundation.org for your.
+2024.06.22 14:43:54 ➾ Tweeted : #heath
+#job
+Is there the job of President/Chief position? 
+@leona
+@HaoNam19308
+Please donate to TAHK Foundation, then we will help you with your target:
+- Donating $15,000 USD per month, $150,000 USD per year service
+- Email to donate@tahkfoundation.org for your.
+2024.06.22 14:44:08 ➾ Is there the job of President/Chief position? 
+@HaoNam19308
+
+Please donate to TAHK Foundation, then we will help you with your target:
+- Donating $15,000 USD per month, $150,000 USD per year service
+- Email to donate@tahkfoundation.org for your.
+2024.06.22 14:44:08 ➾ #heath
+#job
+Is there the job of President/Chief position? 
+@HaoNam19308
+
+Please donate to TAHK Foundation, then we will help you with your target:
+- Donating $15,000 USD per month, $150,000 USD per year service
+- Email to donate@tahkfoundation.org for your.
+2024.06.22 14:44:24 ➾ Tweeted : #heath
+#job
+Is there the job of President/Chief position? 
+@HaoNam19308
+
+Please donate to TAHK Foundation, then we will help you with your target:
+- Donating $15,000 USD per month, $150,000 USD per year service
+- Email to donate@tahkfoundation.org for your.
+2024.06.22 14:44:39 ➾ Is there the job of President/Chief position? 
+@Lee
+@HaoNam19308
+Please donate to TAHK Foundation, then we will help you with your target:
+- Donating $15,000 USD per month, $150,000 USD per year service
+- Email to donate@tahkfoundation.org for your.
+2024.06.22 14:44:39 ➾ #heath
+#job
+Is there the job of President/Chief position? 
+@Lee
+@HaoNam19308
+Please donate to TAHK Foundation, then we will help you with your target:
+- Donating $15,000 USD per month, $150,000 USD per year service
+- Email to donate@tahkfoundation.org for your.
+2024.06.22 14:44:55 ➾ Tweeted : #heath
+#job
+Is there the job of President/Chief position? 
+@Lee
+@HaoNam19308
+Please donate to TAHK Foundation, then we will help you with your target:
+- Donating $15,000 USD per month, $150,000 USD per year service
+- Email to donate@tahkfoundation.org for your.
+2024.06.22 14:45:06 ➾ Failed to tweet
+2024.06.22 14:45:15 ➾ Failed to tweet
+2024.06.22 14:45:23 ➾ Failed to tweet
+2024.06.22 14:45:32 ➾ Failed to tweet
+2024.06.22 14:53:17 ➾ Program started
+2024.06.22 14:53:17 ➾ Twitter opened
+2024.06.22 14:53:17 ➾ Logged in!
+2024.06.22 14:53:32 ➾ Tweeting
+2024.06.22 14:53:42 ➾ Is there the job of President/Chief position? 
+Please donate to TAHK Foundation, then we will help you with your target:
+- Donating $15,000 USD per month, $150,000 USD per year service
+- Email to donate@tahkfoundation.org for your donation.Is there the job of President/Chief position? 
+Please donate to TAHK Foundation, then we will help you with your target:
+- Donating $15,000 USD per month, $150,000 USD per year service
+- Email to donate@tahkfoundation.org for your donation.Is there the job of President/Chief position? 
+Please donate to TAHK Foundation, then we will help you with your target:
+- Donating $15,000 USD per month, $150,000 USD per year service
+- Email to donate@tahkfoundation.org for your donation.
+2024.06.22 14:53:42 ➾ #heath
+#job
+Is there the job of President/Chief position? 
+Please donate to TAHK Foundation, then we will help you with your target:
+- Donating $15,000 USD per month, $150,000 USD per year service
+- Email to donate@tahkfoundation.org for your donation.Is there the job of President/Chief position? 
+Please donate to TAHK Foundation, then we will help you with your target:
+- Donating $15,000 USD per month, $150,000 USD per year service
+- Email to donate@tahkfoundation.org for your donation.Is there the job of President/Chief position? 
+Please donate to TAHK Foundation, then we will help you with your target:
+- Donating $15,000 USD per month, $150,000 USD per year service
+- Email to donate@tahkfoundation.org for your donation.
+2024.06.22 14:53:54 ➾ Is there the job of President/Chief position? 
+@HaoNam19307
+
+Please donate to TAHK Foundation, then we will help you with your target:
+- Donating $15,000 USD per month, $150,000 USD per year service
+- Email to donate@tahkfoundation.org for your.
+2024.06.22 14:53:54 ➾ #heath
+#job
+Is there the job of President/Chief position? 
+@HaoNam19307
+
+Please donate to TAHK Foundation, then we will help you with your target:
+- Donating $15,000 USD per month, $150,000 USD per year service
+- Email to donate@tahkfoundation.org for your.
+2024.06.22 14:54:10 ➾ Tweeted : #heath
+#job
+Is there the job of President/Chief position? 
+@HaoNam19307
+
+Please donate to TAHK Foundation, then we will help you with your target:
+- Donating $15,000 USD per month, $150,000 USD per year service
+- Email to donate@tahkfoundation.org for your.
+2024.06.22 14:54:23 ➾ Is there the job of President/Chief position? 
+@Lee
+@HaoNam19307
+Please donate to TAHK Foundation, then we will help you with your target:
+- Donating $15,000 USD per month, $150,000 USD per year service
+- Email to donate@tahkfoundation.org for your.
+2024.06.22 14:54:23 ➾ #heath
+#job
+Is there the job of President/Chief position? 
+@Lee
+@HaoNam19307
+Please donate to TAHK Foundation, then we will help you with your target:
+- Donating $15,000 USD per month, $150,000 USD per year service
+- Email to donate@tahkfoundation.org for your.
+2024.06.22 14:54:39 ➾ Tweeted : #heath
+#job
+Is there the job of President/Chief position? 
+@Lee
+@HaoNam19307
+Please donate to TAHK Foundation, then we will help you with your target:
+- Donating $15,000 USD per month, $150,000 USD per year service
+- Email to donate@tahkfoundation.org for your.
+2024.06.22 14:54:55 ➾ Is there the job of President/Chief position? 
+@leona
+@HaoNam19308
+Please donate to TAHK Foundation, then we will help you with your target:
+- Donating $15,000 USD per month, $150,000 USD per year service
+- Email to donate@tahkfoundation.org for your.
+2024.06.22 14:54:55 ➾ #heath
+#job
+Is there the job of President/Chief position? 
+@leona
+@HaoNam19308
+Please donate to TAHK Foundation, then we will help you with your target:
+- Donating $15,000 USD per month, $150,000 USD per year service
+- Email to donate@tahkfoundation.org for your.
+2024.06.22 14:55:11 ➾ Tweeted : #heath
+#job
+Is there the job of President/Chief position? 
+@leona
+@HaoNam19308
+Please donate to TAHK Foundation, then we will help you with your target:
+- Donating $15,000 USD per month, $150,000 USD per year service
+- Email to donate@tahkfoundation.org for your.
+2024.06.22 14:55:25 ➾ Is there the job of President/Chief position? 
+@HaoNam19308
+
+Please donate to TAHK Foundation, then we will help you with your target:
+- Donating $15,000 USD per month, $150,000 USD per year service
+- Email to donate@tahkfoundation.org for your.
+2024.06.22 14:55:25 ➾ #heath
+#job
+Is there the job of President/Chief position? 
+@HaoNam19308
+
+Please donate to TAHK Foundation, then we will help you with your target:
+- Donating $15,000 USD per month, $150,000 USD per year service
+- Email to donate@tahkfoundation.org for your.
+2024.06.22 14:55:41 ➾ Tweeted : #heath
+#job
+Is there the job of President/Chief position? 
+@HaoNam19308
+
+Please donate to TAHK Foundation, then we will help you with your target:
+- Donating $15,000 USD per month, $150,000 USD per year service
+- Email to donate@tahkfoundation.org for your.
+2024.06.22 14:56:03 ➾ Hi
+@levie
+@chrisdonahuey
+Is there the job of President/Chief position? Please donate to TAHK Foundation, then we will help you with your target: - Donating $15,000 USD per month, $150,000 USD per year service - Email to: donate@tahkfoundation.org # #
+2024.06.22 14:56:03 ➾ #heath
+#job
+Hi
+@levie
+@chrisdonahuey
+Is there the job of President/Chief position? Please donate to TAHK Foundation, then we will help you with your target: - Donating $15,000 USD per month, $150,000 USD per year service - Email to: donate@tahkfoundation.org # #
+2024.06.22 14:56:19 ➾ Tweeted : #heath
+#job
+Hi
+@levie
+@chrisdonahuey
+Is there the job of President/Chief position? Please donate to TAHK Foundation, then we will help you with your target: - Donating $15,000 USD per month, $150,000 USD per year service - Email to: donate@tahkfoundation.org # #
+2024.06.22 14:56:32 ➾ Hi
+@abc
+@andeson
+Is there the job of President/Chief position? Please donate to TAHK Foundation, then we will help you with your target: - Donating $15,000 USD per month, $150,000 USD per year service - Email to: donate@tahkfoundation.org # #
+2024.06.22 14:56:32 ➾ #heath
+#job
+Hi
+@abc
+@andeson
+Is there the job of President/Chief position? Please donate to TAHK Foundation, then we will help you with your target: - Donating $15,000 USD per month, $150,000 USD per year service - Email to: donate@tahkfoundation.org # #
+2024.06.22 14:56:48 ➾ Tweeted : #heath
+#job
+Hi
+@abc
+@andeson
+Is there the job of President/Chief position? Please donate to TAHK Foundation, then we will help you with your target: - Donating $15,000 USD per month, $150,000 USD per year service - Email to: donate@tahkfoundation.org # #
+2024.06.22 14:57:02 ➾ Hi
+@lee
+@nick
+Is there the job of President/Chief position? Please donate to TAHK Foundation, then we will help you with your target: - Donating $15,000 USD per month, $150,000 USD per year service - Email to: donate@tahkfoundation.org # #
+2024.06.22 14:57:02 ➾ #heath
+#job
+Hi
+@lee
+@nick
+Is there the job of President/Chief position? Please donate to TAHK Foundation, then we will help you with your target: - Donating $15,000 USD per month, $150,000 USD per year service - Email to: donate@tahkfoundation.org # #
+2024.06.22 14:57:18 ➾ Tweeted : #heath
+#job
+Hi
+@lee
+@nick
+Is there the job of President/Chief position? Please donate to TAHK Foundation, then we will help you with your target: - Donating $15,000 USD per month, $150,000 USD per year service - Email to: donate@tahkfoundation.org # #
+2024.06.22 14:57:35 ➾ Hi
+@levie
+@chrisdonahuey
+Is there the job of President/Chief position? Please donate to TAHK Foundation, then we will help you with your target: - Donating $15,000 USD per month, $150,000 USD per year service - Email to: donate@tahkfoundation.org # #
+2024.06.22 14:57:35 ➾ #heath
+#job
+Hi
+@levie
+@chrisdonahuey
+Is there the job of President/Chief position? Please donate to TAHK Foundation, then we will help you with your target: - Donating $15,000 USD per month, $150,000 USD per year service - Email to: donate@tahkfoundation.org # #
+2024.06.22 14:57:50 ➾ Tweeted : #heath
+#job
+Hi
+@levie
+@chrisdonahuey
+Is there the job of President/Chief position? Please donate to TAHK Foundation, then we will help you with your target: - Donating $15,000 USD per month, $150,000 USD per year service - Email to: donate@tahkfoundation.org # #
+2024.06.22 14:58:04 ➾ Hi
+@levie
+@annn
+Is there the job of President/Chief position? Please donate to TAHK Foundation, then we will help you with your target: - Donating $15,000 USD per month, $150,000 USD per year service - Email to: donate@tahkfoundation.org # #
+2024.06.22 14:58:04 ➾ #heath
+#job
+Hi
+@levie
+@annn
+Is there the job of President/Chief position? Please donate to TAHK Foundation, then we will help you with your target: - Donating $15,000 USD per month, $150,000 USD per year service - Email to: donate@tahkfoundation.org # #
+2024.06.22 14:58:20 ➾ Tweeted : #heath
+#job
+Hi
+@levie
+@annn
+Is there the job of President/Chief position? Please donate to TAHK Foundation, then we will help you with your target: - Donating $15,000 USD per month, $150,000 USD per year service - Email to: donate@tahkfoundation.org # #
+2024.06.22 23:45:07 ➾ Program started
+2024.06.22 23:45:07 ➾ Twitter opened
+2024.06.22 23:45:07 ➾ Logged in!
