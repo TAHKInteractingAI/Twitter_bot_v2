@@ -3,8 +3,11 @@ Hướng dẫn dùng tool
 Bước 1: clone source code tại https://github.com/TAHKInteractingAI/Twitter_bot_v2
 
 Bước 2: cài đặt môi trường sử dụng 
+
         - Cài đặt python version 3.10
+        
         - cài đặt các thư viện cần thiết trong requirements.txt bằng 
+                
                 pip install -r requirements.txt
                 
 Bước 3: Chuẩn bị file credential.json theo như hướng dẫn trong video sau https://www.youtube.com/watch?v=3wC-SCdJK2c
