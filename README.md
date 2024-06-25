@@ -1,6 +1,6 @@
 Hướng dẫn dùng tool
 
-Bước 1: clone source code tại https://github.com/Rangdog/Xbot
+Bước 1: clone source code tại https://github.com/TAHKInteractingAI/Twitter_bot_v2
 
 Bước 2: cài đặt môi trường sử dụng 
         - Cài đặt python version 3.10
