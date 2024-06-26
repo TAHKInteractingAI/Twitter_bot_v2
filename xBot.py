@@ -24,6 +24,8 @@ from googleapiclient.errors import HttpError
 
 SCOPES = ["https://www.googleapis.com/auth/spreadsheets"]
 SPREADSHEET_ID = "1jrXQqjYhBj6k1ufmkWIeIaW6eldB9CF-HDU1K2a1X1M"
+PATH_BROWSER = 'D:\\VS CODE\\Test\\venv\\Scripts\\chromedriver-win32\\chromedriver.exe'
+USER_DATA_DIR = r'C:\Users\LEGION\AppData\Local\Google\Chrome\User Data'
 
 
 def log(log_text):
@@ -492,6 +494,53 @@ def log_error_message(text_widget, message):
         print(e)
 
 
+def show_settings():
+    def select_file(entry):
+        file_path = ctk.filedialog.askopenfilename()
+        if file_path:
+            entry.delete(0, ctk.END)
+            entry.insert(0, file_path)
+    settings_window = ctk.CTkToplevel(window)
+    settings_window.title("Cài đặt")
+    settings_window.geometry("400x400")
+    ctk.CTkLabel(settings_window, text="Chỉnh sửa thông tin").pack(pady=10)
+    ctk.CTkLabel(settings_window, text="Spreadsheet ID:").pack()
+    spreadsheet_id_entry = ctk.CTkEntry(settings_window, width=200)
+    spreadsheet_id_entry.pack(pady=5)
+    spreadsheet_id_entry.insert(0, SPREADSHEET_ID)
+
+    ctk.CTkLabel(settings_window, text="path_browser:").pack()
+    path_browser_entry = ctk.CTkEntry(settings_window, width=200)
+    path_browser_entry.pack(pady=5)
+    path_browser_entry.insert(0, PATH_BROWSER)
+
+    select_path_browser_button = ctk.CTkButton(
+        settings_window, text="Chon file chromedriver", command=lambda: select_file(path_browser_entry))
+    select_path_browser_button.pack(pady=5)
+
+    ctk.CTkLabel(settings_window, text="USER_DATA_DIR").pack()
+    path_user_data_dir_entry = ctk.CTkEntry(settings_window, width=200)
+    path_user_data_dir_entry.pack(pady=5)
+    path_user_data_dir_entry.insert(0, USER_DATA_DIR)
+
+    select_path_user_data_dir_entry = ctk.CTkButton(
+        settings_window, text="Chọn file user data", command=lambda: select_file(path_user_data_dir_entry))
+    select_path_user_data_dir_entry.pack(pady=5)
+
+    def save_settings():
+        global SPREADSHEET_ID
+        global USER_DATA_DIR
+        global PATH_BROWSER
+        SPREADSHEET_ID = spreadsheet_id_entry.get()
+        USER_DATA_DIR = path_user_data_dir_entry.get()
+        PATH_BROWSER = path_browser_entry.get()
+        messagebox.showinfo("Thông báo", "Đã lưu cài đặt thành công")
+        settings_window.destroy()
+
+    ctk.CTkButton(settings_window, text="Lưu",
+                  command=save_settings).pack(pady=10)
+
+
 # Create customtkinter window
 ctk.set_appearance_mode("System")  # Modes: "System" (default), "Dark", "Light"
 # Themes: "blue" (default), "green", "dark-blue"
@@ -527,6 +576,9 @@ error_text.configure(yscrollcommand=scrollbar.set)
 # Status label
 status_label = ctk.CTkLabel(window, text="Status: Ready")
 status_label.pack(pady=10)
+# Setting button
+settings_button = ctk.CTkButton(window, text="Settings", command=show_settings)
+settings_button.pack(pady=10)
 
 
 window.mainloop()
