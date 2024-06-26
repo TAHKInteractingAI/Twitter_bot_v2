@@ -1,0 +1,3 @@
+1zWEc03qBcoWauLf8AyY3emox6t5bhHsyQZ2vbhIYiGo
+D:\\VS CODE\\Test\\venv\\Scripts\\chromedriver-win32\\chromedriver.exe
+C:\\Users\\LEGION\\AppData\\Local\\Google\\Chrome\\User Data

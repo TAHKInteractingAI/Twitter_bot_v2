@@ -41,13 +41,13 @@ def web_driver():
     user_data_dir = r'C:\Users\LEGION\AppData\Local\Google\Chrome\User Data'
 
     options = webdriver.ChromeOptions()
-    options.add_argument(f'--user-data-dir={user_data_dir}')
+    options.add_argument(f'--user-data-dir={USER_DATA_DIR}')
     options.add_argument('--profile-directory=Profile 1')
     options.add_argument('--no-sandbox')
     options.add_argument('--disable-dev-shm-usage')
 
     if sys.platform == 'win32':
-        service = Service(executable_path=path_browser)
+        service = Service(executable_path=PATH_BROWSER)
         driver = webdriver.Chrome(service=service, options=options)
     else:
         # Xử lý cho các hệ điều hành khác (nếu có)
@@ -83,6 +83,42 @@ def run(command):
 ###
     # cannot follow some test case
 ###
+
+def add_error_message(msg, error_text):
+    error_text.configure(state="normal")
+    error_text.insert('end', msg + "\n")
+    error_text.configure(state="disabled")
+    error_text.yview_moveto(1)
+
+
+def check_credential(error_text):
+    if os.path.exists('credential.json'):
+        add_error_message("Sãn sàng", error_text)
+    else:
+        add_error_message("Không tồn tại file credential", error_text)
+
+
+def load_du_lieu():
+    global SPREADSHEET_ID
+    global PATH_BROWSER
+    global USER_DATA_DIR
+    with open('setting.txt', 'r') as files:
+        lines = files.readlines()
+        SPREADSHEET_ID = lines[0].strip()
+        PATH_BROWSER = lines[1].strip()
+        USER_DATA_DIR = lines[2].strip()
+
+
+def save_du_lieu():
+    global SPREADSHEET_ID
+    global PATH_BROWSER
+    global USER_DATA_DIR
+    with open('setting.txt', 'w') as file:
+        file.write(SPREADSHEET_ID)
+        file.write('\n')
+        file.write(PATH_BROWSER)
+        file.write('\n')
+        file.write(USER_DATA_DIR)
 
 
 def get_data_google_sheet(credentials, range_name):
@@ -124,8 +160,6 @@ def get_url_follow():
 def follow_only(driver):
     status_label.configure(text=f"Status: Running follow_only")
     window.update()
-    file = "input.xlsx"
-    df = pd.read_excel(file)
     urls = get_url_follow()
     n = len(urls)
     log(f"Visiting {len(urls)} profiles.")
@@ -495,6 +529,8 @@ def log_error_message(text_widget, message):
 
 
 def show_settings():
+    load_du_lieu()
+
     def select_file(entry):
         file_path = ctk.filedialog.askopenfilename()
         if file_path:
@@ -531,10 +567,16 @@ def show_settings():
         global SPREADSHEET_ID
         global USER_DATA_DIR
         global PATH_BROWSER
+        global driver
         SPREADSHEET_ID = spreadsheet_id_entry.get()
         USER_DATA_DIR = path_user_data_dir_entry.get()
         PATH_BROWSER = path_browser_entry.get()
-        messagebox.showinfo("Thông báo", "Đã lưu cài đặt thành công")
+        save_du_lieu()
+        load_du_lieu()
+        if driver:
+            driver.quit()
+        driver = web_driver()
+        driver.get("https://twitter.com")
         settings_window.destroy()
 
     ctk.CTkButton(settings_window, text="Lưu",
@@ -573,6 +615,7 @@ error_text.pack(pady=20)
 scrollbar = ctk.CTkScrollbar(window, command=error_text.yview)
 scrollbar.pack(side="right", fill="y")
 error_text.configure(yscrollcommand=scrollbar.set)
+
 # Status label
 status_label = ctk.CTkLabel(window, text="Status: Ready")
 status_label.pack(pady=10)
@@ -580,5 +623,6 @@ status_label.pack(pady=10)
 settings_button = ctk.CTkButton(window, text="Settings", command=show_settings)
 settings_button.pack(pady=10)
 
+check_credential(error_text)
 
 window.mainloop()
