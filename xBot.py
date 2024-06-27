@@ -21,11 +21,44 @@ from google.oauth2.credentials import Credentials
 from google_auth_oauthlib.flow import InstalledAppFlow
 from googleapiclient.discovery import build
 from googleapiclient.errors import HttpError
+import gspread
+import platform
+
 
 SCOPES = ["https://www.googleapis.com/auth/spreadsheets"]
 SPREADSHEET_ID = "1jrXQqjYhBj6k1ufmkWIeIaW6eldB9CF-HDU1K2a1X1M"
 PATH_BROWSER = 'D:\\VS CODE\\Test\\venv\\Scripts\\chromedriver-win32\\chromedriver.exe'
-USER_DATA_DIR = r'C:\Users\LEGION\AppData\Local\Google\Chrome\User Data'
+USER_DATA_DIR = ""
+
+
+def get_USER_DATA_DIR():
+    global USER_DATA_DIR
+    USER_PROFILE = os.environ.get('USERPROFILE') or os.environ.get('HOME')
+    if platform.system() == 'Windows':
+        USER_DATA_DIR = os.path.join(
+            USER_PROFILE, 'AppData', 'Local', 'Google', 'Chrome', 'User Data')
+    elif platform.system() == 'Linux':
+        USER_DATA_DIR = os.path.join(USER_PROFILE, '.config', 'google-chrome')
+    elif platform.system() == 'Darwin':  # macOS
+        USER_DATA_DIR = os.path.join(
+            USER_PROFILE, 'Library', 'Application Support', 'Google', 'Chrome')
+    else:
+        USER_DATA_DIR = None
+
+
+def get_chromedriver():
+    global PATH_BROWSER
+    if platform.system() == 'Windows':
+        PATH_BROWSER = "chromedriver\\chromedriver-win32\\chromedriver.exe"
+    elif platform.system() == 'Linux':
+        PATH_BROWSER = "chromedriver\\chromedriver-linux64\\chromedriver"
+    elif platform.system() == 'Darwin':  # macOS
+        if platform.machine() == 'x86_64':
+            PATH_BROWSER = 'chromedriver\\chromedriver-mac-x64\\chromedriver'
+        elif platform.machine() == 'arm64':
+            PATH_BROWSER = 'chromedriver\\chromedriver-mac-arm64\\chromedriver'
+    else:
+        PATH_BROWSER = None
 
 
 def log(log_text):
@@ -37,50 +70,37 @@ def log(log_text):
 
 
 def web_driver():
-    path_browser = 'D:\\VS CODE\\Test\\venv\\Scripts\\chromedriver-win32\\chromedriver.exe'
-    user_data_dir = r'C:\Users\LEGION\AppData\Local\Google\Chrome\User Data'
+    # path_browser = 'D:\\VS CODE\\Test\\venv\\Scripts\\chromedriver-win32\\chromedriver.exe'
+    # user_data_dir = r'C:\Users\LEGION\AppData\Local\Google\Chrome\User Data'
 
     options = webdriver.ChromeOptions()
     options.add_argument(f'--user-data-dir={USER_DATA_DIR}')
     options.add_argument('--profile-directory=Profile 1')
     options.add_argument('--no-sandbox')
     options.add_argument('--disable-dev-shm-usage')
-
-    if sys.platform == 'win32':
-        service = Service(executable_path=PATH_BROWSER)
-        driver = webdriver.Chrome(service=service, options=options)
-    else:
-        # Xử lý cho các hệ điều hành khác (nếu có)
-        pass
-
+    service = Service(executable_path=PATH_BROWSER)
+    driver = webdriver.Chrome(service=service, options=options)
     driver.implicitly_wait(10)
     return driver
 
 
 def load_du_lieu():
     global SPREADSHEET_ID
-    global PATH_BROWSER
-    global USER_DATA_DIR
     with open('setting.txt', 'r') as files:
         lines = files.readlines()
         SPREADSHEET_ID = lines[0].strip()
-        PATH_BROWSER = lines[1].strip()
-        USER_DATA_DIR = lines[2].strip()
 
 
 def save_du_lieu():
     global SPREADSHEET_ID
-    global PATH_BROWSER
-    global USER_DATA_DIR
     with open('setting.txt', 'w') as file:
         file.write(SPREADSHEET_ID)
         file.write('\n')
-        file.write(PATH_BROWSER)
-        file.write('\n')
-        file.write(USER_DATA_DIR)
 
 
 load_du_lieu()
+get_USER_DATA_DIR()
+get_chromedriver()
 global_delay = 3
 driver = web_driver()
 tweet_len_limit = 280
@@ -532,11 +552,6 @@ def log_error_message(text_widget, message):
 def show_settings():
     load_du_lieu()
 
-    def select_file(entry):
-        file_path = ctk.filedialog.askopenfilename()
-        if file_path:
-            entry.delete(0, ctk.END)
-            entry.insert(0, file_path)
     settings_window = ctk.CTkToplevel(window)
     settings_window.title("Cài đặt")
     settings_window.geometry("400x400")
@@ -546,38 +561,11 @@ def show_settings():
     spreadsheet_id_entry.pack(pady=5)
     spreadsheet_id_entry.insert(0, SPREADSHEET_ID)
 
-    ctk.CTkLabel(settings_window, text="path_browser:").pack()
-    path_browser_entry = ctk.CTkEntry(settings_window, width=200)
-    path_browser_entry.pack(pady=5)
-    path_browser_entry.insert(0, PATH_BROWSER)
-
-    select_path_browser_button = ctk.CTkButton(
-        settings_window, text="Chon file chromedriver", command=lambda: select_file(path_browser_entry))
-    select_path_browser_button.pack(pady=5)
-
-    ctk.CTkLabel(settings_window, text="USER_DATA_DIR").pack()
-    path_user_data_dir_entry = ctk.CTkEntry(settings_window, width=200)
-    path_user_data_dir_entry.pack(pady=5)
-    path_user_data_dir_entry.insert(0, USER_DATA_DIR)
-
-    select_path_user_data_dir_entry = ctk.CTkButton(
-        settings_window, text="Chọn file user data", command=lambda: select_file(path_user_data_dir_entry))
-    select_path_user_data_dir_entry.pack(pady=5)
-
     def save_settings():
         global SPREADSHEET_ID
-        global USER_DATA_DIR
-        global PATH_BROWSER
-        global driver
         SPREADSHEET_ID = spreadsheet_id_entry.get()
-        USER_DATA_DIR = path_user_data_dir_entry.get()
-        PATH_BROWSER = path_browser_entry.get()
         save_du_lieu()
         load_du_lieu()
-        if driver:
-            driver.quit()
-        driver = web_driver()
-        driver.get("https://twitter.com")
         settings_window.destroy()
 
     ctk.CTkButton(settings_window, text="Lưu",

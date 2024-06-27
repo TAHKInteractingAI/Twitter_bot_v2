@@ -87,13 +87,81 @@
 # root.mainloop()
 
 
-def load_du_lieu():
-    with open('setting.txt', 'r') as files:
-        lines = files.readlines()
-        print(lines)
-        print(lines[0].strip)
-        print(lines[1].strip)
-        print(lines[2].strip)
+# def load_du_lieu():
+#     with open('setting.txt', 'r') as files:
+#         lines = files.readlines()
+#         print(lines)
+#         print(lines[0].strip)
+#         print(lines[1].strip)
+#         print(lines[2].strip)
 
 
-load_du_lieu()
+# load_du_lieu()
+
+
+# import os
+# import platform
+
+# USER_PROFILE = os.environ.get('USERPROFILE') or os.environ.get('HOME')
+# if platform.system() == 'Windows':
+#     USER_DATA_DIR = os.path.join(
+#         USER_PROFILE, 'AppData', 'Local', 'Google', 'Chrome', 'User Data')
+# elif platform.system() == 'Linux':
+#     USER_DATA_DIR = os.path.join(USER_PROFILE, '.config', 'google-chrome')
+# elif platform.system() == 'Darwin':  # macOS
+#     USER_DATA_DIR = os.path.join(
+#         USER_PROFILE, 'Library', 'Application Support', 'Google', 'Chrome')
+# else:
+#     USER_DATA_DIR = None
+#     print("Unsupported OS")
+
+# print(USER_DATA_DIR)
+
+
+# import gspread
+
+# # Kết nối với Google Sheets API
+# gc = gspread.service_account()
+
+# # URL của Google Sheet công khai
+# sheet_url = 'https://docs.google.com/spreadsheets/d/YOUR_SHEET_ID/edit#gid=0'
+
+# # Mở Google Sheet từ URL
+# sheet = gc.open_by_url(sheet_url)
+
+# # Lấy trang tính đầu tiên
+# worksheet = sheet.get_worksheet(0)
+
+# # Đọc toàn bộ dữ liệu trong trang tính
+# data = worksheet.get_all_records()
+
+# # In dữ liệu
+# for row in data:
+#     print(row)
+
+
+from google.oauth2 import service_account
+import gspread
+from oauth2client.service_account import
+
+# Thông tin xác thực dịch vụ
+
+# Khởi tạo kết nối với Google Sheets API
+creds = service_account.Credentials.from_service_account_info()
+gc = gspread.authorize(creds)
+
+# URL của Google Sheet công khai
+sheet_url = 'https://docs.google.com/spreadsheets/d/1zWEc03qBcoWauLf8AyY3emox6t5bhHsyQZ2vbhIYiGo/edit?gid=990092170#gid=990092170'
+
+# Mở Google Sheet từ URL
+sheet = gc.open_by_url(sheet_url)
+
+# Lấy trang tính đầu tiên
+worksheet = sheet.get_worksheet(0)
+
+# Đọc toàn bộ dữ liệu trong trang tính
+data = worksheet.get_all_records()
+
+# In dữ liệu
+for row in data:
+    print(row)
