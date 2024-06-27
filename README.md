@@ -1,10 +1,22 @@
 Hướng dẫn dùng tool
 
+Lưu ý những hướng dẫn sau được thực hiện trên hệ điều hành Window 10
+
+Cách 1: Chạy bằng file xBot.py
+
 Bước 1: clone source code tại https://github.com/TAHKInteractingAI/Twitter_bot_v2
 
 Bước 2: cài đặt môi trường sử dụng 
 
         - Cài đặt python version 3.10
+
+        - Tạo môi trường ảo venv
+
+                python -m venv venv
+
+        - Kích hoạt môi trường
+
+                venv/Scripts/activtate
         
         - cài đặt các thư viện cần thiết trong requirements.txt bằng 
                 
@@ -23,3 +35,7 @@ Bước 7: Thay đổi user_data_dir = r'C:\Users\LEGION\AppData\Local\Google\Ch
 Bước 8: Run file xBot.py sử dụng browser để đăng nhập nick Twitter của mình
 
 Bước 9: Nhập dữ liệu vào google sheet và chạy chương trình
+
+Cách 2 chạy APP
+
+
