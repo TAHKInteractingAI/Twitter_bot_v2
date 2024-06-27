@@ -57,6 +57,30 @@ def web_driver():
     return driver
 
 
+def load_du_lieu():
+    global SPREADSHEET_ID
+    global PATH_BROWSER
+    global USER_DATA_DIR
+    with open('setting.txt', 'r') as files:
+        lines = files.readlines()
+        SPREADSHEET_ID = lines[0].strip()
+        PATH_BROWSER = lines[1].strip()
+        USER_DATA_DIR = lines[2].strip()
+
+
+def save_du_lieu():
+    global SPREADSHEET_ID
+    global PATH_BROWSER
+    global USER_DATA_DIR
+    with open('setting.txt', 'w') as file:
+        file.write(SPREADSHEET_ID)
+        file.write('\n')
+        file.write(PATH_BROWSER)
+        file.write('\n')
+        file.write(USER_DATA_DIR)
+
+
+load_du_lieu()
 global_delay = 3
 driver = web_driver()
 tweet_len_limit = 280
@@ -96,29 +120,6 @@ def check_credential(error_text):
         add_error_message("Sãn sàng", error_text)
     else:
         add_error_message("Không tồn tại file credential", error_text)
-
-
-def load_du_lieu():
-    global SPREADSHEET_ID
-    global PATH_BROWSER
-    global USER_DATA_DIR
-    with open('setting.txt', 'r') as files:
-        lines = files.readlines()
-        SPREADSHEET_ID = lines[0].strip()
-        PATH_BROWSER = lines[1].strip()
-        USER_DATA_DIR = lines[2].strip()
-
-
-def save_du_lieu():
-    global SPREADSHEET_ID
-    global PATH_BROWSER
-    global USER_DATA_DIR
-    with open('setting.txt', 'w') as file:
-        file.write(SPREADSHEET_ID)
-        file.write('\n')
-        file.write(PATH_BROWSER)
-        file.write('\n')
-        file.write(USER_DATA_DIR)
 
 
 def get_data_google_sheet(credentials, range_name):

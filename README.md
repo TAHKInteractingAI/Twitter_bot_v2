@@ -4,38 +4,62 @@ Lưu ý những hướng dẫn sau được thực hiện trên hệ điều hà
 
 Cách 1: Chạy bằng file xBot.py
 
-Bước 1: clone source code tại https://github.com/TAHKInteractingAI/Twitter_bot_v2
+        Bước 1: clone source code tại https://github.com/TAHKInteractingAI/Twitter_bot_v2
 
-Bước 2: cài đặt môi trường sử dụng 
+        Bước 2: cài đặt môi trường sử dụng
 
-        - Cài đặt python version 3.10
+                - Cài đặt python version 3.10
 
-        - Tạo môi trường ảo venv
+                - Tạo môi trường ảo venv
 
-                python -m venv venv
+                        python -m venv venv
 
-        - Kích hoạt môi trường
+                - Kích hoạt môi trường
 
-                venv/Scripts/activtate
-        
-        - cài đặt các thư viện cần thiết trong requirements.txt bằng 
-                
-                pip install -r requirements.txt
-                
-Bước 3: Chuẩn bị file credential.json theo như hướng dẫn trong video sau https://www.youtube.com/watch?v=3wC-SCdJK2c
+                        venv/Scripts/activtate
 
-Bước 4: Tạo file google sheet và lấy SPREADSHEET_ID như trong video https://www.youtube.com/watch?v=3wC-SCdJK2c
+                - cài đặt các thư viện cần thiết trong requirements.txt bằng
 
-Bước 5: cài đặt chromedriver tùy theo phiên bản chrome giống trong video sau https://www.youtube.com/watch?v=_LesEb-sRLA chú ý là cùng version chrome
+                        pip install -r requirements.txt
 
-Bước 6: Thay đổi path_browser = 'D:\\VS CODE\\Test\\venv\\Scripts\\chromedriver-win32\\chromedriver.exe' sao cho phù hợp và chỉnh sửa sao cho driver hoạt động
+        Bước 3: Chuẩn bị file credential.json theo như hướng dẫn trong video sau https://www.youtube.com/watch?v=3wC-SCdJK2c
 
-Bước 7: Thay đổi user_data_dir = r'C:\Users\LEGION\AppData\Local\Google\Chrome\User Data' sao cho phù hợp với dường dẫn trên máy
+        Bước 4: Tạo file google sheet và lấy SPREADSHEET_ID như trong video https://www.youtube.com/watch?v=3wC-SCdJK2c
 
-Bước 8: Run file xBot.py sử dụng browser để đăng nhập nick Twitter của mình
+        Bước 5: cài đặt chromedriver tùy theo phiên bản chrome giống trong video sau https://www.youtube.com/watch?v=_LesEb-sRLA chú ý là cùng version chrome
 
-Bước 9: Nhập dữ liệu vào google sheet và chạy chương trình
+        Bước 6: Thay đổi path_browser = 'D:\\VS CODE\\Test\\venv\\Scripts\\chromedriver-win32\\chromedriver.exe' sao cho phù hợp và chỉnh sửa sao cho driver hoạt động
+
+        Bước 7: Thay đổi user_data_dir = r'C:\Users\LEGION\AppData\Local\Google\Chrome\User Data' sao cho phù hợp với dường dẫn trên máy
+
+        Bước 8: Run file xBot.py sử dụng browser để đăng nhập nick Twitter của mình
+
+        Bước 9: Nhập dữ liệu vào google sheet và chạy chương trình
 
 Cách 2 chạy APP
 
+        Bước 1: clone source code tại https://github.com/TAHKInteractingAI/Twitter_bot_v2
 
+        Bước 2: Chuẩn bị file credential.json theo như hướng dẫn trong video sau https://www.youtube.com/watch?v=3wC-SCdJK2c
+
+        Hình ảnh
+
+        Bước 3: Tạo file google sheet và lấy SPREADSHEET_ID như trong video https://www.youtube.com/watch?v=3wC-SCdJK2c
+
+        Hình ảnh lấy SPREADSHEET_ID
+
+        Bước 4: vô folder dist và đưa file credential.json vào. Chuẩn bị file setting như sau
+
+        Hình ảnh file setting.txt
+
+        Cấu trúc file trong folder dist
+
+        Hình ảnh cấu trúc folder dist
+
+        Bước 5: Run file xbot.exe Sau khi hiện lên browser đăng nhập tài khoản twitter (X) nếu không hiện browser thì phải chỉnh đúng PATH_BROWSER và USER_DATA_DIR trong file setting.txt
+
+        Bước 6: Chỉnh sửa một số thông tin trong file setting sao cho phù hợp
+
+        bước 7: Chạy chức năng
+
+        Lưu ý trong bước này sẽ yêu cầu đăng nhập tài khoản google của mình để lấy dữ liệu trong google sheets
