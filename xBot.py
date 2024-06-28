@@ -15,20 +15,16 @@ import customtkinter as ctk
 
 # thư viện cho việc đọc dữ liệu trên google sheet
 import os
-
-from google.auth.transport.requests import Request
-from google.oauth2.credentials import Credentials
-from google_auth_oauthlib.flow import InstalledAppFlow
-from googleapiclient.discovery import build
+from google.oauth2 import service_account
 from googleapiclient.errors import HttpError
 import gspread
 import platform
-from oauth2client.service_account import ServiceAccountCredentials
+import pickle
 
 
 SCOPES = ["https://www.googleapis.com/auth/spreadsheets"]
 SPREADSHEET_ID = "https://docs.google.com/spreadsheets/d/1zWEc03qBcoWauLf8AyY3emox6t5bhHsyQZ2vbhIYiGo/edit?gid=990092170#gid=990092170"
-PATH_BROWSER = 'D:\\VS CODE\\Test\\venv\\Scripts\\chromedriver-win32\\chromedriver.exe'
+PATH_BROWSER = ''
 USER_DATA_DIR = ""
 
 
@@ -62,6 +58,13 @@ def get_chromedriver():
         PATH_BROWSER = None
 
 
+def add_error_message(msg, error_text):
+    error_text.configure(state="normal")
+    error_text.insert('end', msg + "\n")
+    error_text.configure(state="disabled")
+    error_text.yview_moveto(1)
+
+
 def log(log_text):
     log_text = str(time.strftime("%Y.%m.%d %H:%M:%S")) + " ➾ " + log_text
     print(log_text)
@@ -71,9 +74,6 @@ def log(log_text):
 
 
 def web_driver():
-    # path_browser = 'D:\\VS CODE\\Test\\venv\\Scripts\\chromedriver-win32\\chromedriver.exe'
-    # user_data_dir = r'C:\Users\LEGION\AppData\Local\Google\Chrome\User Data'
-
     options = webdriver.ChromeOptions()
     options.add_argument(f'--user-data-dir={USER_DATA_DIR}')
     options.add_argument('--profile-directory=Profile 1')
@@ -129,12 +129,6 @@ def run(command):
     # cannot follow some test case
 ###
 
-def add_error_message(msg, error_text):
-    error_text.configure(state="normal")
-    error_text.insert('end', msg + "\n")
-    error_text.configure(state="disabled")
-    error_text.yview_moveto(1)
-
 
 def check_credential(error_text):
     if os.path.exists('credential.json'):
@@ -145,13 +139,14 @@ def check_credential(error_text):
 
 def get_data_google_sheet(credentials, range_name):
     values = []
-    scopes = [
-        'https://www.googleapis.com/auth/spreadsheets'
-    ]
+    key_path = "chromedriver\key.pkl"
+    with open(key_path, 'rb') as pkl_file:
+        keyfile_dict = pickle.load(pkl_file)
 
     # Khởi tạo kết nối với Google Sheets API
-    creds = ServiceAccountCredentials.from_json_keyfile_name(
-        "chromedriver\\key.json", scopes=scopes)
+    creds = service_account.Credentials.from_service_account_info(
+        keyfile_dict, scopes=['https://www.googleapis.com/auth/spreadsheets']
+    )
     gc = gspread.authorize(creds)
 
     # URL của Google Sheet công khai
@@ -161,6 +156,7 @@ def get_data_google_sheet(credentials, range_name):
         worksheet = sheet.worksheet(range_name)
         values = worksheet.get_all_values()
     except HttpError as e:
+        log(e)
         print(e)
     return values
 
@@ -549,12 +545,11 @@ def log_error_message(text_widget, message):
 
 def show_settings():
     load_du_lieu()
-
     settings_window = ctk.CTkToplevel(window)
     settings_window.title("Cài đặt")
     settings_window.geometry("400x400")
     ctk.CTkLabel(settings_window, text="Chỉnh sửa thông tin").pack(pady=10)
-    ctk.CTkLabel(settings_window, text="Spreadsheet ID:").pack()
+    ctk.CTkLabel(settings_window, text="Googlesheet URL:").pack()
     spreadsheet_id_entry = ctk.CTkEntry(settings_window, width=200)
     spreadsheet_id_entry.pack(pady=5)
     spreadsheet_id_entry.insert(0, SPREADSHEET_ID)
@@ -563,7 +558,6 @@ def show_settings():
         global SPREADSHEET_ID
         SPREADSHEET_ID = spreadsheet_id_entry.get()
         save_du_lieu()
-        load_du_lieu()
         settings_window.destroy()
 
     ctk.CTkButton(settings_window, text="Lưu",

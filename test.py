@@ -140,34 +140,87 @@
 #     print(row)
 
 
+# from google.oauth2 import service_account
+# import gspread
+# from oauth2client.service_account import ServiceAccountCredentials
+# import subprocess
+
+# # Thông tin xác thực dịch vụ
+
+# scopes = [
+#     'https://www.googleapis.com/auth/spreadsheets'
+# ]
+
+
+# def decrypt_keyfile(enc_file, dec_file, password):
+#     command = ["openssl", "enc", "-aes-256-cbc", "-d",
+#                "-in", enc_file, "-out", dec_file, "-k", password]
+#     result = subprocess.run(command, capture_output=True)
+#     if result.returncode != 0:
+#         raise Exception(f"Failed to decrypt file: {result.stderr.decode()}")
+
+
+# encrypted_file = "chromedriver/key.json.enc"
+# decrypted_file = "chromedriver/key.json"
+
+# decrypt_keyfile(encrypted_file, decrypted_file, "123456")
+
+# # Khởi tạo kết nối với Google Sheets API
+# creds = ServiceAccountCredentials.from_json_keyfile_name(
+#     decrypted_file, scopes=scopes)
+# gc = gspread.authorize(creds)
+
+# # URL của Google Sheet công khai
+# sheet_url = 'https://docs.google.com/spreadsheets/d/1zWEc03qBcoWauLf8AyY3emox6t5bhHsyQZ2vbhIYiGo/edit?gid=990092170#gid=990092170'
+
+# # Mở Google Sheet từ URL
+# sheet = gc.open_by_url(sheet_url)
+
+# # Lấy trang tính đầu tiên
+# worksheet = sheet.worksheet('tweet')
+
+# # Đọc toàn bộ dữ liệu trong trang tính
+# data = worksheet.get_all_values()
+
+# print(data)
+# # In dữ liệu
+# for row in data:
+#     print(row)
+
+
+# import json
+# import pickle
+
+# # Đường dẫn đến file JSON và file PKL
+# json_file_path = 'chromedriver/key.json'
+# pkl_file_path = 'chromedriver/key.pkl'
+
+# # Đọc dữ liệu từ file JSON
+# with open(json_file_path, 'r', encoding='utf-8') as json_file:
+#     data = json.load(json_file)
+
+# # Lưu dữ liệu vào file PKL
+# with open(pkl_file_path, 'wb') as pkl_file:
+#     pickle.dump(data, pkl_file)
+
+# print("Chuyển đổi từ JSON sang PKL thành công!")
+
+
 from google.oauth2 import service_account
 import gspread
-from oauth2client.service_account import ServiceAccountCredentials
-import subprocess
+import pickle
 
-# Thông tin xác thực dịch vụ
+# Đường dẫn đến file PKL
+pkl_file_path = 'chromedriver/key.pkl'
 
-scopes = [
-    'https://www.googleapis.com/auth/spreadsheets'
-]
-
-
-def decrypt_keyfile(enc_file, dec_file, password):
-    command = ["openssl", "enc", "-aes-256-cbc", "-d",
-               "-in", enc_file, "-out", dec_file, "-k", password]
-    result = subprocess.run(command, capture_output=True)
-    if result.returncode != 0:
-        raise Exception(f"Failed to decrypt file: {result.stderr.decode()}")
-
-
-encrypted_file = "chromedriver/key.json.enc"
-decrypted_file = "chromedriver/key.json"
-
-decrypt_keyfile(encrypted_file, decrypted_file, "123456")
+# Đọc dữ liệu từ file PKL
+with open(pkl_file_path, 'rb') as pkl_file:
+    keyfile_dict = pickle.load(pkl_file)
 
 # Khởi tạo kết nối với Google Sheets API
-creds = ServiceAccountCredentials.from_json_keyfile_name(
-    decrypted_file, scopes=scopes)
+creds = service_account.Credentials.from_service_account_info(
+    keyfile_dict, scopes=['https://www.googleapis.com/auth/spreadsheets']
+)
 gc = gspread.authorize(creds)
 
 # URL của Google Sheet công khai
@@ -182,11 +235,9 @@ worksheet = sheet.worksheet('tweet')
 # Đọc toàn bộ dữ liệu trong trang tính
 data = worksheet.get_all_values()
 
-print(data)
 # In dữ liệu
 for row in data:
     print(row)
-
 
 # from cryptography.fernet import Fernet
 
