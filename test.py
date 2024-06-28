@@ -142,12 +142,32 @@
 
 from google.oauth2 import service_account
 import gspread
-from oauth2client.service_account import
+from oauth2client.service_account import ServiceAccountCredentials
+import subprocess
 
 # Thông tin xác thực dịch vụ
 
+scopes = [
+    'https://www.googleapis.com/auth/spreadsheets'
+]
+
+
+def decrypt_keyfile(enc_file, dec_file, password):
+    command = ["openssl", "enc", "-aes-256-cbc", "-d",
+               "-in", enc_file, "-out", dec_file, "-k", password]
+    result = subprocess.run(command, capture_output=True)
+    if result.returncode != 0:
+        raise Exception(f"Failed to decrypt file: {result.stderr.decode()}")
+
+
+encrypted_file = "chromedriver/key.json.enc"
+decrypted_file = "chromedriver/key.json"
+
+decrypt_keyfile(encrypted_file, decrypted_file, "123456")
+
 # Khởi tạo kết nối với Google Sheets API
-creds = service_account.Credentials.from_service_account_info()
+creds = ServiceAccountCredentials.from_json_keyfile_name(
+    decrypted_file, scopes=scopes)
 gc = gspread.authorize(creds)
 
 # URL của Google Sheet công khai
@@ -157,11 +177,68 @@ sheet_url = 'https://docs.google.com/spreadsheets/d/1zWEc03qBcoWauLf8AyY3emox6t5
 sheet = gc.open_by_url(sheet_url)
 
 # Lấy trang tính đầu tiên
-worksheet = sheet.get_worksheet(0)
+worksheet = sheet.worksheet('tweet')
 
 # Đọc toàn bộ dữ liệu trong trang tính
-data = worksheet.get_all_records()
+data = worksheet.get_all_values()
 
+print(data)
 # In dữ liệu
 for row in data:
     print(row)
+
+
+# from cryptography.fernet import Fernet
+
+# # Tạo và lưu khóa
+
+
+# def generate_key():
+#     key = Fernet.generate_key()
+#     with open("secret.key", "wb") as key_file:
+#         key_file.write(key)
+
+# # Đọc khóa từ tệp
+
+
+# def load_key():
+#     return open("secret.key", "rb").read()
+
+# # Mã hóa tệp key.json
+
+
+# def encrypt_file(file_name, key):
+#     fernet = Fernet(key)
+#     with open(file_name, "rb") as file:
+#         file_data = file.read()
+#     encrypted_data = fernet.encrypt(file_data)
+#     with open(file_name + ".enc", "wb") as file:
+#         file.write(encrypted_data)
+
+# # Giải mã tệp key.json
+
+
+# def decrypt_file(file_name_encrypted, key):
+#     fernet = Fernet(key)
+#     with open(file_name_encrypted, "rb") as file:
+#         encrypted_data = file.read()
+#     decrypted_data = fernet.decrypt(encrypted_data)
+#     with open(file_name_encrypted[:-4], "wb") as file:
+#         file.write(decrypted_data)
+
+
+# # Thực hiện mã hóa và giải mã
+# if __name__ == "__main__":
+#     # Tạo và lưu khóa
+#     generate_key()
+
+#     # Đọc khóa từ tệp
+#     key = load_key()
+
+#     # Mã hóa tệp key.json
+#     encrypt_file("chromedriver/key.json", key)
+
+#     # # Giải mã tệp key.json
+#     # decrypt_file("key.json.enc", key)
+
+#

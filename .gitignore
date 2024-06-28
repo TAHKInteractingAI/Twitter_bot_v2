@@ -4,3 +4,4 @@ token.json
 log.txt
 dist/credential.json
 dist/token.json
+key.json

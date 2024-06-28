@@ -23,10 +23,11 @@ from googleapiclient.discovery import build
 from googleapiclient.errors import HttpError
 import gspread
 import platform
+from oauth2client.service_account import ServiceAccountCredentials
 
 
 SCOPES = ["https://www.googleapis.com/auth/spreadsheets"]
-SPREADSHEET_ID = "1jrXQqjYhBj6k1ufmkWIeIaW6eldB9CF-HDU1K2a1X1M"
+SPREADSHEET_ID = "https://docs.google.com/spreadsheets/d/1zWEc03qBcoWauLf8AyY3emox6t5bhHsyQZ2vbhIYiGo/edit?gid=990092170#gid=990092170"
 PATH_BROWSER = 'D:\\VS CODE\\Test\\venv\\Scripts\\chromedriver-win32\\chromedriver.exe'
 USER_DATA_DIR = ""
 
@@ -144,24 +145,21 @@ def check_credential(error_text):
 
 def get_data_google_sheet(credentials, range_name):
     values = []
-    if os.path.exists("token.json"):
-        credentials = Credentials.from_authorized_user_file(
-            "token.json", SCOPES)
-    if not credentials or not credentials.valid:
-        if credentials and credentials.expired and credentials.refresh_token:
-            credentials.refresh(Request())
-        else:
-            flow = InstalledAppFlow.from_client_secrets_file(
-                "credential.json", SCOPES)
-            credentials = flow.run_local_server(port=0)
-        with open("token.json", "w") as token:
-            token.write(credentials.to_json())
+    scopes = [
+        'https://www.googleapis.com/auth/spreadsheets'
+    ]
+
+    # Khởi tạo kết nối với Google Sheets API
+    creds = ServiceAccountCredentials.from_json_keyfile_name(
+        "chromedriver\\key.json", scopes=scopes)
+    gc = gspread.authorize(creds)
+
+    # URL của Google Sheet công khai
+    sheet_url = SPREADSHEET_ID
     try:
-        service = build("sheets", "v4", credentials=credentials)
-        sheets = service.spreadsheets().values()
-        result = sheets.get(spreadsheetId=SPREADSHEET_ID,
-                            range=range_name).execute()
-        values = result.get("values", [])
+        sheet = gc.open_by_url(sheet_url)
+        worksheet = sheet.worksheet(range_name)
+        values = worksheet.get_all_values()
     except HttpError as e:
         print(e)
     return values
@@ -170,7 +168,7 @@ def get_data_google_sheet(credentials, range_name):
 def get_url_follow():
     url_list = []
     credentials = None
-    range_name = "'500+ Connection'"
+    range_name = '500+ Connection'
     values = get_data_google_sheet(credentials, range_name)
     for index, row in enumerate(values):
         if (index != 0):
@@ -405,7 +403,7 @@ def find_element_in_list(driver, xpath_list, wait=3):
 def get_tweet_names():
     tweet_names = []
     credentials = None
-    range_name = "'500+ Connection'"
+    range_name = '500+ Connection'
     values = get_data_google_sheet(credentials, range_name)
     for index, row in enumerate(values):
         if (index != 0):
@@ -416,7 +414,7 @@ def get_tweet_names():
 def get_tags():
     tags = []
     credentials = None
-    range_name = "'500+ Connection'"
+    range_name = '500+ Connection'
     values = get_data_google_sheet(credentials, range_name)
     for index, row in enumerate(values):
         if index != 0:
@@ -427,7 +425,7 @@ def get_tags():
 def get_hashtags():
     hashtags = []
     credentials = None
-    range_name = "'500+ Connection'"
+    range_name = '500+ Connection'
     values = get_data_google_sheet(credentials, range_name)
     for index, row in enumerate(values):
         if index != 0:
@@ -438,7 +436,7 @@ def get_hashtags():
 def get_name_sheet_2():
     name = []
     credentials = None
-    range_name = "'tweet'"
+    range_name = 'tweet'
     values = get_data_google_sheet(credentials, range_name)
     for index, row in enumerate(values):
         if index != 0:
@@ -448,7 +446,7 @@ def get_name_sheet_2():
 
 def get_info_dict(tweet_name):
     credentials = None
-    range_name = "'tweet'"
+    range_name = 'tweet'
     values = get_data_google_sheet(credentials, range_name)
     for index, row in enumerate(values):
         if row[0] == tweet_name:
@@ -480,7 +478,7 @@ def getInfoOftweet():
 def get_personal_tweet_names():
     tweet_names = []
     credentials = None
-    range_name = "'500+ Connection'"
+    range_name = '500+ Connection'
     values = get_data_google_sheet(credentials, range_name)
     for index, row in enumerate(values):
         if (index != 0):
@@ -491,7 +489,7 @@ def get_personal_tweet_names():
 def get_personal_tags():
     tags = []
     credentials = None
-    range_name = "'500+ Connection'"
+    range_name = '500+ Connection'
     values = get_data_google_sheet(credentials, range_name)
     for index, row in enumerate(values):
         if index != 0:
@@ -502,7 +500,7 @@ def get_personal_tags():
 def get_personal_hashtags():
     hashtags = []
     credentials = None
-    range_name = "'500+ Connection'"
+    range_name = '500+ Connection'
     values = get_data_google_sheet(credentials, range_name)
     for index, row in enumerate(values):
         if index != 0:
