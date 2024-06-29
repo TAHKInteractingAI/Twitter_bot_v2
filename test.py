@@ -206,90 +206,35 @@
 # print("Chuyển đổi từ JSON sang PKL thành công!")
 
 
-from google.oauth2 import service_account
-import gspread
-import pickle
+# from google.oauth2 import service_account
+# import gspread
+# import pickle
 
-# Đường dẫn đến file PKL
-pkl_file_path = 'chromedriver/key.pkl'
+# # Đường dẫn đến file PKL
+# pkl_file_path = 'chromedriver/key.pkl'
 
-# Đọc dữ liệu từ file PKL
-with open(pkl_file_path, 'rb') as pkl_file:
-    keyfile_dict = pickle.load(pkl_file)
+# # Đọc dữ liệu từ file PKL
+# with open(pkl_file_path, 'rb') as pkl_file:
+#     keyfile_dict = pickle.load(pkl_file)
 
-# Khởi tạo kết nối với Google Sheets API
-creds = service_account.Credentials.from_service_account_info(
-    keyfile_dict, scopes=['https://www.googleapis.com/auth/spreadsheets']
-)
-gc = gspread.authorize(creds)
+# # Khởi tạo kết nối với Google Sheets API
+# creds = service_account.Credentials.from_service_account_info(
+#     keyfile_dict, scopes=['https://www.googleapis.com/auth/spreadsheets']
+# )
+# gc = gspread.authorize(creds)
 
-# URL của Google Sheet công khai
-sheet_url = 'https://docs.google.com/spreadsheets/d/1zWEc03qBcoWauLf8AyY3emox6t5bhHsyQZ2vbhIYiGo/edit?gid=990092170#gid=990092170'
+# # URL của Google Sheet công khai
+# sheet_url = 'https://docs.google.com/spreadsheets/d/1zWEc03qBcoWauLf8AyY3emox6t5bhHsyQZ2vbhIYiGo/edit?gid=990092170#gid=990092170'
 
-# Mở Google Sheet từ URL
-sheet = gc.open_by_url(sheet_url)
+# # Mở Google Sheet từ URL
+# sheet = gc.open_by_url(sheet_url)
 
-# Lấy trang tính đầu tiên
-worksheet = sheet.worksheet('tweet')
+# # Lấy trang tính đầu tiên
+# worksheet = sheet.worksheet('tweet')
 
-# Đọc toàn bộ dữ liệu trong trang tính
-data = worksheet.get_all_values()
+# # Đọc toàn bộ dữ liệu trong trang tính
+# data = worksheet.get_all_values()
 
-# In dữ liệu
-for row in data:
-    print(row)
-
-# from cryptography.fernet import Fernet
-
-# # Tạo và lưu khóa
-
-
-# def generate_key():
-#     key = Fernet.generate_key()
-#     with open("secret.key", "wb") as key_file:
-#         key_file.write(key)
-
-# # Đọc khóa từ tệp
-
-
-# def load_key():
-#     return open("secret.key", "rb").read()
-
-# # Mã hóa tệp key.json
-
-
-# def encrypt_file(file_name, key):
-#     fernet = Fernet(key)
-#     with open(file_name, "rb") as file:
-#         file_data = file.read()
-#     encrypted_data = fernet.encrypt(file_data)
-#     with open(file_name + ".enc", "wb") as file:
-#         file.write(encrypted_data)
-
-# # Giải mã tệp key.json
-
-
-# def decrypt_file(file_name_encrypted, key):
-#     fernet = Fernet(key)
-#     with open(file_name_encrypted, "rb") as file:
-#         encrypted_data = file.read()
-#     decrypted_data = fernet.decrypt(encrypted_data)
-#     with open(file_name_encrypted[:-4], "wb") as file:
-#         file.write(decrypted_data)
-
-
-# # Thực hiện mã hóa và giải mã
-# if __name__ == "__main__":
-#     # Tạo và lưu khóa
-#     generate_key()
-
-#     # Đọc khóa từ tệp
-#     key = load_key()
-
-#     # Mã hóa tệp key.json
-#     encrypt_file("chromedriver/key.json", key)
-
-#     # # Giải mã tệp key.json
-#     # decrypt_file("key.json.enc", key)
-
-#
+# # In dữ liệu
+# for row in data:
+#     print(row)

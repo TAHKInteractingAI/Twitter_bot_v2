@@ -1,17 +1,14 @@
 import time
-import pandas as pd
 from selenium import webdriver
-from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
 import tkinter as tk
-from tkinter import filedialog
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-from tkinter import messagebox
 from selenium.webdriver.chrome.service import Service
 import re
-import sys
 import customtkinter as ctk
+
+from setting import *
 
 # thư viện cho việc đọc dữ liệu trên google sheet
 import os
@@ -83,20 +80,6 @@ def web_driver():
     driver = webdriver.Chrome(service=service, options=options)
     driver.implicitly_wait(10)
     return driver
-
-
-def load_du_lieu():
-    global SPREADSHEET_ID
-    with open('setting.txt', 'r') as files:
-        lines = files.readlines()
-        SPREADSHEET_ID = lines[0].strip()
-
-
-def save_du_lieu():
-    global SPREADSHEET_ID
-    with open('setting.txt', 'w') as file:
-        file.write(SPREADSHEET_ID)
-        file.write('\n')
 
 
 load_du_lieu()
