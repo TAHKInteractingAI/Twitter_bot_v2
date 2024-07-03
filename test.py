@@ -238,3 +238,13 @@
 # # In dữ liệu
 # for row in data:
 #     print(row)
+
+
+import re
+
+info = {'hashtag': 'example,string with,commas,spaces\nand newlines'}
+
+# Split the string using regular expression
+split_hashtags = re.split(r'[,\s\n]+', info['hashtag'])
+
+print(split_hashtags)

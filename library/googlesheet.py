@@ -40,64 +40,9 @@ def get_data_google_sheet(credentials, range_name):
     return values
 
 
-def get_url_follow():
-    url_list = []
-    credentials = None
-    range_name = '500+ Connection'
-    values = get_data_google_sheet(credentials, range_name)
-    for index, row in enumerate(values):
-        if (index != 0):
-            url_list.append(row[0])
-    return url_list
-
-
-def get_tweet_names():
-    tweet_names = []
-    credentials = None
-    range_name = '500+ Connection'
-    values = get_data_google_sheet(credentials, range_name)
-    for index, row in enumerate(values):
-        if (index != 0):
-            tweet_names.append(row[1])
-    return tweet_names
-
-
-def get_tags():
-    tags = []
-    credentials = None
-    range_name = '500+ Connection'
-    values = get_data_google_sheet(credentials, range_name)
-    for index, row in enumerate(values):
-        if index != 0:
-            tags.append(row[2])
-    return tags
-
-
-def get_hashtags():
-    hashtags = []
-    credentials = None
-    range_name = '500+ Connection'
-    values = get_data_google_sheet(credentials, range_name)
-    for index, row in enumerate(values):
-        if index != 0:
-            hashtags.append(row[3])
-    return hashtags
-
-
-def get_name_sheet_2():
-    name = []
-    credentials = None
-    range_name = 'tweet'
-    values = get_data_google_sheet(credentials, range_name)
-    for index, row in enumerate(values):
-        if index != 0:
-            name.append(row[1])
-    return name
-
-
 def get_info_dict(tweet_name):
     credentials = None
-    range_name = 'tweet'
+    range_name = 'tweet_content'
     values = get_data_google_sheet(credentials, range_name)
     for index, row in enumerate(values):
         if row[0] == tweet_name:
@@ -109,60 +54,56 @@ def get_info_dict(tweet_name):
     return {}
 
 
-def getInfoOftweet():
-    urls = get_url_follow()
-    tweetNames = get_tweet_names()
-    tags = get_tags()
-    hashtags = get_hashtags()
-    info = []
-    for i in tweetNames:
-        info_dict = get_info_dict(i)
-        info.append(info_dict)
-
-    for i in range(len(info)):
-        info[i]['url'] = urls[i]
-        info[i]['tag'] = tags[i]
-        info[i]['hashtag'] = hashtags[i]
-    return info
-
-
 def get_personal_tweet_names():
     tweet_names = []
     credentials = None
-    range_name = '500+ Connection'
+    range_name = 'tweet_tag'
     values = get_data_google_sheet(credentials, range_name)
     for index, row in enumerate(values):
         if (index != 0):
-            tweet_names.append(row[4])
+            if row[0].strip() != '':
+                tweet_names.append(row[0])
     return tweet_names
 
 
 def get_personal_tags():
     tags = []
     credentials = None
-    range_name = '500+ Connection'
+    range_name = 'tweet_tag'
     values = get_data_google_sheet(credentials, range_name)
     for index, row in enumerate(values):
         if index != 0:
-            tags.append(row[5])
+            tags.append(row[1])
     return tags
 
 
 def get_personal_hashtags():
     hashtags = []
     credentials = None
-    range_name = '500+ Connection'
+    range_name = 'tweet_tag'
     values = get_data_google_sheet(credentials, range_name)
     for index, row in enumerate(values):
         if index != 0:
-            hashtags.append(row[6])
+            hashtags.append(row[2])
     return hashtags
+
+
+def get_personal_subhashtags():
+    sub_hashtags = []
+    credentials = None
+    range_name = 'tweet_tag'
+    values = get_data_google_sheet(credentials, range_name)
+    for index, row in enumerate(values):
+        if index != 0:
+            sub_hashtags.append(row[3])
+    return sub_hashtags
 
 
 def get_infor_personal_tweet():
     tweetNames = get_personal_tweet_names()
     tags = get_personal_tags()
     hashtags = get_personal_hashtags()
+    sub_hashtags = get_personal_subhashtags()
     info = []
     for i in tweetNames:
         info_dict = get_info_dict(i)
@@ -171,4 +112,5 @@ def get_infor_personal_tweet():
     for i in range(len(info)):
         info[i]['tag'] = tags[i]
         info[i]['hashtag'] = hashtags[i]
+        info[i]['subhashtag'] = sub_hashtags[i]
     return info

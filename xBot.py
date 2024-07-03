@@ -34,27 +34,7 @@ except:
 
 
 def run(command):
-    if command == 'follow_only':
-        try:
-            follow_only(driver, status_label, get_url_follow,
-                        log, window, global_delay)
-        except gspread.exceptions.NoValidUrlKeyFound as e:
-            add_error_message(
-                f"Có lỗi với link Google Sheet vui lòng kiểm tra lại link và quyền của Google Sheet", error_text)
-        except Exception as e:
-            add_error_message(
-                f"Lỗi: {e}", error_text)
-    elif command == "follow_tweet":
-        try:
-            follow_tweet(driver, status_label, window, getInfoOftweet, log,
-                         tweet_len_limit, log_error_message, error_text, global_delay)
-        except gspread.exceptions.NoValidUrlKeyFound as e:
-            add_error_message(
-                f"Có lỗi với link Google Sheet vui lòng kiểm tra lại link và quyền của Google Sheet", error_text)
-        except Exception as e:
-            add_error_message(
-                f"Lỗi: {e}", error_text)
-    elif command == "personal_tweet":
+    if command == "personal_tweet":
         try:
             personal_tweet(driver, status_label, window, get_infor_personal_tweet,
                            log, tweet_len_limit, log_error_message, error_text, global_delay)
@@ -67,7 +47,7 @@ def run(command):
 
 
 def check_credential(error_text):
-    if os.path.exists('credential.json'):
+    if os.path.exists('chromedriver\key.pkl'):
         add_error_message("Sãn sàng", error_text)
     else:
         add_error_message("Không tồn tại file credential", error_text)
@@ -120,18 +100,8 @@ window = tk.Tk()
 window.title("Twitter Follow and Tweet Bot")
 window.geometry("500x500")
 
-# follow button
-follow_button = ctk.CTkButton(
-    window, text="Follow the Twitter user Only", command=lambda: run('follow_only')
-)
-follow_button.pack(pady=(20, 10))
-# follow and tweet button
-follow_tweet_button = ctk.CTkButton(
-    window, text="Follow and Tweet at the Twitter user", command=lambda: run('follow_tweet')
-)
-follow_tweet_button.pack(pady=10)
 # personal tweet button
-tweet_button = ctk.CTkButton(window, text="Personal Tweets",
+tweet_button = ctk.CTkButton(window, text="Post on Twitter",
                              command=lambda: run('personal_tweet'))
 tweet_button.pack(pady=10)
 
