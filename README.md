@@ -1,4 +1,4 @@
-Hướng dẫn dùng tool
+**Hướng dẫn dùng tool**
 
 Bước 1: clone source code hoặc download zip tại https://github.com/TAHKInteractingAI/Twitter_bot_v2
 
@@ -8,7 +8,7 @@ Bước 3: chạy file xBot.exe trong folder dict
 
 Bước 4: Đăng nhập vào twitter(X) và sử dụng
 
-Hướng dẫn setup dữ liệu để post bài
+**Hướng dẫn setup dữ liệu để post bài**
 
 ![1](https://github.com/TAHKInteractingAI/Twitter_bot_v2/assets/92283489/d4126c32-ec99-4450-b575-5f0db8d4ba6d)
 
