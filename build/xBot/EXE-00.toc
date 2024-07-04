@@ -3051,7 +3051,7 @@
  [],
  False,
  False,
- 1719997100,
+ 1720101764,
  [('run.exe',
    'D:\\Project\\Twitter_bot_v2\\venv\\lib\\site-packages\\PyInstaller\\bootloader\\Windows-64bit-intel\\run.exe',
    'EXECUTABLE')],
