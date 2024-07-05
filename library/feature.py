@@ -101,10 +101,10 @@ def personal_tweet(driver, status_label, window, get_infor_personal_tweet, log, 
                 print('dropdown hidden')
             time.sleep(3)
 
-            # driver.find_element(
-            #     "xpath",
-            #     '//*[@id="layers"]/div[2]/div/div/div/div/div/div[2]/div[2]/div/div/div/div[3]/div[2]/div[1]/div/div/div/div[2]/div[2]/div/div/div/button[2]',
-            # ).click()
+            driver.find_element(
+                "xpath",
+                '//*[@id="layers"]/div[2]/div/div/div/div/div/div[2]/div[2]/div/div/div/div[3]/div[2]/div[1]/div/div/div/div[2]/div[2]/div/div/div/button[2]',
+            ).click()
             log(f"Tweeted : {tweet}")
             time.sleep(global_delay)
         except Exception as e:
