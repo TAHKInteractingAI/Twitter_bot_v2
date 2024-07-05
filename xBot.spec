@@ -2,7 +2,7 @@
 
 
 a = Analysis(
-    ['Xbot.py'],
+    ['xBot.py'],
     pathex=[],
     binaries=[],
     datas=[],
@@ -22,7 +22,7 @@ exe = EXE(
     a.binaries,
     a.datas,
     [],
-    name='Xbot',
+    name='xBot',
     debug=False,
     bootloader_ignore_signals=False,
     strip=False,

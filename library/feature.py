@@ -69,8 +69,9 @@ def personal_tweet(driver, status_label, window, get_infor_personal_tweet, log, 
             this_tags = [
                 '@' + tag if not tag.startswith('@') else tag for tag in this_tags]
             # add tagname
-            tweet = re.sub(
-                r'&&&', lambda match: replace_all(this_tags), tweet)
+            tag = ""
+            for i in this_tags:
+                tag += i+" "
             log(tweet)
             # add hashtag
             # tweet = re.sub(r'#', lambda match: replace_and_increment(this_hashtags), tweet)
@@ -80,7 +81,7 @@ def personal_tweet(driver, status_label, window, get_infor_personal_tweet, log, 
             sub_hashtag = ""
             for i in sub_hashtags:
                 sub_hashtag += i+" "
-            tweet = hashTag+tweet + "\n"+sub_hashtag
+            tweet = hashTag + tweet + "\n" + tag + "\n"+sub_hashtag
             log(tweet)
             if (len(tweet) > tweet_len_limit):
                 log_error_message(error_text, "post " + str(
