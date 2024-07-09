@@ -9,8 +9,15 @@ USER_DATA_DIR = ''
 
 def get_chromedriver():
     if platform.system() == 'Windows':
-        path_browser = os.path.abspath(
-            "chromedriver/chromedriver-win32/chromedriver.exe")
+        architecture = os.environ.get('PROCESSOR_ARCHITECTURE', '')
+        if architecture == 'AMD64' or os.environ.get('PROCESSOR_ARCHITEW6432'):
+            # 64-bit Windows (Note: Usually the same driver path as 32-bit)
+            path_browser = os.path.abspath(
+                "chromedriver/chromedriver-win64/chromedriver.exe")
+        else:
+            # 32-bit Windows
+            path_browser = os.path.abspath(
+                "chromedriver/chromedriver-win32/chromedriver.exe")
     elif platform.system() == 'Linux':
         path_browser = os.path.abspath(
             "chromedriver/chromedriver-linux64/chromedriver")
