@@ -6,3 +6,4 @@ dist/credential.json
 dist/token.json
 key.json
 __pycache__
+log.txt
