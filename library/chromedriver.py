@@ -2,9 +2,19 @@ import os
 import platform
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
+import subprocess
 
 PATH_BROWSER = ''
 USER_DATA_DIR = ''
+
+
+def close_existing_chrome_instances():
+    try:
+        # Đóng tất cả các phiên bản Chrome đang chạy (chỉ dành cho Windows)
+        subprocess.call(["taskkill", "/F", "/IM", "chrome.exe"],
+                        stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+    except Exception as e:
+        print(f"Error closing Chrome instances: {e}")
 
 
 def get_chromedriver():
@@ -63,6 +73,7 @@ def web_driver():
     options.add_argument('--profile-directory=Profile 1')
     options.add_argument('--no-sandbox')
     options.add_argument('--disable-dev-shm-usage')
+    close_existing_chrome_instances()
     service = Service(executable_path=PATH_BROWSER)
     driver = webdriver.Chrome(service=service, options=options)
     driver.implicitly_wait(10)
