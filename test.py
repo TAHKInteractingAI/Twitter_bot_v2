@@ -240,11 +240,23 @@
 #     print(row)
 
 
-import re
+# import re
 
-info = {'hashtag': 'example,string with,commas,spaces\nand newlines'}
+# info = {'hashtag': 'example,string with,commas,spaces\nand newlines'}
 
-# Split the string using regular expression
-split_hashtags = re.split(r'[,\s\n]+', info['hashtag'])
+# # Split the string using regular expression
+# split_hashtags = re.split(r'[,\s\n]+', info['hashtag'])
 
-print(split_hashtags)
+# print(split_hashtags)
+
+
+import json
+import pickle
+
+# Đọc dữ liệu từ file JSON
+with open('key.json', 'r') as json_file:
+    data = json.load(json_file)
+
+# Lưu dữ liệu vào file .pkl
+with open('key.pkl', 'wb') as pkl_file:
+    pickle.dump(data, pkl_file)
